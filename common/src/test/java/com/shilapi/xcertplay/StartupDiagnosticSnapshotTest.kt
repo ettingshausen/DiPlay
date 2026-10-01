@@ -20,6 +20,11 @@ class StartupDiagnosticSnapshotTest {
         AirPlayPersistence.saveAutoStartOnBoot(app, false)
     }
 
+    /** The merged receiver launches through AutoStartPolicy, which needs the overlay permission on Android 10+. */
+    private fun grantOverlayPermission() {
+        org.robolectric.shadows.ShadowSettings.setCanDrawOverlays(true)
+    }
+
     @Test fun disabledBootIsRecordedWithoutLaunchingOrChangingTheSetting() {
         var launched = false
         val context = object : ContextWrapper(app) {
@@ -32,6 +37,7 @@ class StartupDiagnosticSnapshotTest {
     }
 
     @Test fun successfulLaunchMeansAnActivityRequestAndRetainsTheExistingFlags() {
+        grantOverlayPermission()
         AirPlayPersistence.saveAutoStartOnBoot(app, true)
         var launch: Intent? = null
         val context = object : ContextWrapper(app) {
@@ -44,6 +50,7 @@ class StartupDiagnosticSnapshotTest {
     }
 
     @Test fun launchFailureRecordsOnlyItsClassAndASecondBootReplacesOldEvidence() {
+        grantOverlayPermission()
         AirPlayPersistence.saveAutoStartOnBoot(app, true)
         val context = object : ContextWrapper(app) {
             override fun startActivity(intent: Intent) { throw SecurityException("Jane's phone token=private-data") }

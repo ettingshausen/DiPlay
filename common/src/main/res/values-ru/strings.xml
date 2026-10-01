@@ -110,7 +110,7 @@
     <string name="automatic_connection">Автоматическое подключение</string>
     <string name="automatic_map_enabled_open_the_cluster_map_card_or_select">Автоматическая карта включена. Откройте карточку карты комбинации или выберите тему карты.</string>
     <string name="automatic_map_setup_adb">Автоматическая настройка карты · ADB</string>
-    <string name="availability_depends_on_your_head_unit_s_startup_settings">Доступность зависит от настроек запуска вашего головного устройства.</string>
+    <string name="availability_depends_on_your_head_unit_s_startup_settings">Только после полной перезагрузки. Доступность зависит от настроек запуска вашего головного устройства.</string>
     <string name="back">Назад</string>
     <string name="back_to_diplay">Вернуться в DiPlay</string>
     <string name="band">Диапазон</string>
@@ -250,6 +250,13 @@
     <string name="one_time_setup_on_this_car">Разовая настройка для этого автомобиля</string>
     <string name="open">Открыть</string>
     <string name="open_after_the_car_starts">Открывать после запуска автомобиля</string>
+    <string name="open_when_your_iphone_connects">Открывать при подключении iPhone</string>
+    <string name="start_diplay_and_connect_when_the_iphone_you_chose_joins">Открывает DiPlay и подключается, когда выбранный iPhone подключается к Bluetooth автомобиля. Работает и после пробуждения автомобиля из спящего режима.</string>
+    <string name="android_lets_diplay_open_itself_from_the_background_only_wi">Android позволяет DiPlay открываться из фона только с разрешением «Поверх других окон». Без него DiPlay вместо этого покажет уведомление для нажатия.</string>
+    <string name="allow_display_over_other_apps">Разрешить показ поверх других окон</string>
+    <string name="automatic_start">Автозапуск</string>
+    <string name="your_iphone_is_connected_tap_to_start_carplay">Ваш iPhone подключен. Нажмите, чтобы запустить CarPlay.</string>
+    <string name="tap_to_start_carplay">Нажмите, чтобы запустить CarPlay.</string>
     <string name="open_bluetooth">Открыть Bluetooth</string>
     <string name="open_car_hotspot_settings">Открыть настройки точки доступа</string>
     <string name="open_car_settings">Открыть настройки автомобиля</string>

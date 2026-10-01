@@ -27,6 +27,15 @@ Start with 30 fps, Efficient video (HEVC) off and Default icon/text size. Try 80
 
 Vehicle-data mode and battery/wheel-speed/parked-video controls are under **Settings → Location → Advanced vehicle data**. Default DiLink 5.0 mode remains the default. Legacy mode is optional, uses bounded read-only detection and needs authorized network ADB; it exposes only confirmed fields. Review any prompt to replace previously saved fields. This does not enable ADB, write vehicle settings or establish support for every older head unit.
 
+## Automatic start
+
+By default DiPlay starts only when you open it. Two opt-in settings under **Automatic connection** change that:
+
+- **Open when your iPhone connects** — DiPlay opens and connects when the iPhone you chose joins the car’s Bluetooth. This also works when the head unit wakes from sleep, which is what most cars do between drives.
+- **Open after the car starts** — DiPlay opens after a full restart of the head unit. It depends on the head unit’s own startup settings.
+
+On Android 10 and newer, tap **Allow display over other apps** on the same page once; Android only lets an app open itself from the background with that permission. Without it, DiPlay shows a notification to tap instead. If your head unit has a background-app or autostart list in its own settings, allow DiPlay there too.
+
 ## Connection recovery and reports
 
 If reinstalling left an old group, close other projection apps, then use **Settings → Wireless connection help → Reset CarPlay Wi-Fi**. DiPlay asks before removing an unrecognized Wi-Fi Direct group. Updating in place is preferable to uninstalling.

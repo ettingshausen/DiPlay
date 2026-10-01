@@ -105,7 +105,7 @@
     <string name="automatic_connection">自动连接</string>
     <string name="automatic_map_enabled_open_the_cluster_map_card_or_select">自动地图已启用。打开仪表盘地图卡片或选择“地图主题”。</string>
     <string name="automatic_map_setup_adb">自动地图设置 · ADB</string>
-    <string name="availability_depends_on_your_head_unit_s_startup_settings">是否可用取决于车机的启动设置。</string>
+    <string name="availability_depends_on_your_head_unit_s_startup_settings">仅在整个车机重启后生效。是否可用取决于车机的启动设置。</string>
     <string name="back">返回</string>
     <string name="back_to_diplay">返回 DiPlay</string>
     <string name="band">频段</string>
@@ -255,6 +255,13 @@
     <string name="one_time_setup_on_this_car">在此车机上一次性设置</string>
     <string name="open">开放</string>
     <string name="open_after_the_car_starts">车机启动后打开</string>
+    <string name="open_when_your_iphone_connects">iPhone 连接时打开</string>
+    <string name="start_diplay_and_connect_when_the_iphone_you_chose_joins">你选择的 iPhone 连上车机蓝牙时，自动打开 DiPlay 并连接。车机从睡眠中唤醒后也能生效。</string>
+    <string name="android_lets_diplay_open_itself_from_the_background_only_wi">只有授予“显示在其他应用上层”权限，Android 才允许 DiPlay 从后台自行打开。没有该权限时，DiPlay 会改为发送一条通知，点按即可打开。</string>
+    <string name="allow_display_over_other_apps">允许显示在其他应用上层</string>
+    <string name="automatic_start">自动启动</string>
+    <string name="your_iphone_is_connected_tap_to_start_carplay">你的 iPhone 已连接。点按以启动 CarPlay。</string>
+    <string name="tap_to_start_carplay">点按以启动 CarPlay。</string>
     <string name="open_bluetooth">打开蓝牙</string>
     <string name="open_car_hotspot_settings">打开车机热点设置</string>
     <string name="open_car_settings">打开车机设置</string>
