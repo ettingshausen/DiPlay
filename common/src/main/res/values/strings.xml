@@ -108,7 +108,7 @@
     <string name="automatic_connection">Automatic connection</string>
     <string name="automatic_map_enabled_open_the_cluster_map_card_or_select">Automatic map enabled. Open the cluster map card or select Map theme.</string>
     <string name="automatic_map_setup_adb">Automatic map setup · ADB</string>
-    <string name="availability_depends_on_your_head_unit_s_startup_settings">Availability depends on your head unit’s startup settings.</string>
+    <string name="availability_depends_on_your_head_unit_s_startup_settings">Only after a full restart. Availability depends on your head unit’s startup settings.</string>
     <string name="back">Back</string>
     <string name="back_to_diplay">Back to DiPlay</string>
     <string name="band">Band</string>
@@ -252,6 +252,13 @@
     <string name="one_time_setup_on_this_car">One-time setup on this car</string>
     <string name="open">Open</string>
     <string name="open_after_the_car_starts">Open after the car starts</string>
+    <string name="open_when_your_iphone_connects">Open when your iPhone connects</string>
+    <string name="start_diplay_and_connect_when_the_iphone_you_chose_joins">Start DiPlay and connect when the iPhone you chose joins the car’s Bluetooth. Works after the car wakes from sleep.</string>
+    <string name="android_lets_diplay_open_itself_from_the_background_only_wi">Android lets DiPlay open itself from the background only with “Display over other apps”. Without it, DiPlay shows a notification to tap instead.</string>
+    <string name="allow_display_over_other_apps">Allow display over other apps</string>
+    <string name="automatic_start">Automatic start</string>
+    <string name="your_iphone_is_connected_tap_to_start_carplay">Your iPhone is connected. Tap to start CarPlay.</string>
+    <string name="tap_to_start_carplay">Tap to start CarPlay.</string>
     <string name="open_bluetooth">Open Bluetooth</string>
     <string name="open_car_hotspot_settings">Open car hotspot settings</string>
     <string name="open_car_settings">Open car settings</string>

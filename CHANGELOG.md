@@ -1,3 +1,10 @@
+# Unreleased
+
+- Open DiPlay when the selected iPhone joins the car's Bluetooth (opt-in, *Open when your iPhone connects*). Head units usually wake from sleep instead of rebooting, so the boot trigger alone never fired on an ordinary drive; reported on a Song Plus (DiLink 4.0).
+- *Open after the car starts* also reacts to quick boot.
+- Android 10+ only lets DiPlay open itself from the background with *Display over other apps*; the settings page offers the permission, and without it DiPlay posts a notification to tap. Repeated triggers within 30 s count once; nothing happens while a CarPlay session runs.
+- Decision logic is covered by unit tests. Not yet validated in a car.
+
 # DiPlay 0.2.9 — 2026-10-02
 
 - Follow BYD head-unit day/night changes while CarPlay is visible, including firmware that does not reliably deliver Android configuration callbacks.

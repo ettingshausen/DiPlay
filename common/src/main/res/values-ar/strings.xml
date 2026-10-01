@@ -106,7 +106,7 @@
     <string name="automatic_connection">اتصال تلقائي</string>
     <string name="automatic_map_enabled_open_the_cluster_map_card_or_select">تم تفعيل الخريطة التلقائية. افتح بطاقة خريطة المجموعة أو اختر سمة الخريطة.</string>
     <string name="automatic_map_setup_adb">إعداد الخريطة التلقائي · ADB</string>
-    <string name="availability_depends_on_your_head_unit_s_startup_settings">تعتمد التوفر على إعدادات بدء وحدة القيادة.</string>
+    <string name="availability_depends_on_your_head_unit_s_startup_settings">بعد إعادة التشغيل الكاملة فقط. يعتمد التوفر على إعدادات بدء وحدة القيادة.</string>
     <string name="back">رجوع</string>
     <string name="back_to_diplay">العودة إلى DiPlay</string>
     <string name="band">النطاق</string>
@@ -246,6 +246,13 @@
     <string name="one_time_setup_on_this_car">إعداد لمرة واحدة على هذه السيارة</string>
     <string name="open">فتح</string>
     <string name="open_after_the_car_starts">الفتح بعد تشغيل السيارة</string>
+    <string name="open_when_your_iphone_connects">الفتح عند اتصال iPhone</string>
+    <string name="start_diplay_and_connect_when_the_iphone_you_chose_joins">يفتح DiPlay ويبدأ الاتصال عندما يتصل iPhone الذي اخترته بلوتوث السيارة. يعمل أيضًا بعد استيقاظ السيارة من السكون.</string>
+    <string name="android_lets_diplay_open_itself_from_the_background_only_wi">لا يسمح أندرويد لـ DiPlay بفتح نفسه من الخلفية إلا بإذن «العرض فوق التطبيقات الأخرى». بدونه يعرض DiPlay إشعارًا للنقر عليه بدلًا من ذلك.</string>
+    <string name="allow_display_over_other_apps">السماح بالعرض فوق التطبيقات الأخرى</string>
+    <string name="automatic_start">البدء التلقائي</string>
+    <string name="your_iphone_is_connected_tap_to_start_carplay">‏iPhone متصل. انقر لبدء CarPlay.</string>
+    <string name="tap_to_start_carplay">انقر لبدء CarPlay.</string>
     <string name="open_bluetooth">فتح البلوتوث</string>
     <string name="open_car_hotspot_settings">فتح إعدادات نقطة اتصال السيارة</string>
     <string name="open_car_settings">فتح إعدادات السيارة</string>
