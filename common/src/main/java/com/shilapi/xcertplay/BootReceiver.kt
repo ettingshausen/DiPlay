@@ -3,33 +3,20 @@ package com.shilapi.xcertplay
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import android.util.Log
 
-/** Starts the CarPlay host after boot when the user has enabled the startup option. */
+/** Opens DiPlay after the head unit boots, including quick boot, when the user enabled the startup option. */
 class BootReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
-        if (intent.action != Intent.ACTION_BOOT_COMPLETED) return
-        val launchEnabled = AirPlayPersistence.loadAutoStartOnBoot(context)
-        StartupDiagnosticSnapshot.received(context, launchEnabled)
-        if (!launchEnabled) return
-
-        val launch = Intent(context, DiPlayActivity::class.java).apply {
-            addFlags(
-                Intent.FLAG_ACTIVITY_NEW_TASK or
-                    Intent.FLAG_ACTIVITY_CLEAR_TOP or
-                    Intent.FLAG_ACTIVITY_SINGLE_TOP,
-            )
-        }
-        try {
-            context.startActivity(launch)
-            StartupDiagnosticSnapshot.launchResult(context)
-        } catch (error: RuntimeException) {
-            StartupDiagnosticSnapshot.launchResult(context, error)
-            Log.w(TAG, "Boot auto-start could not launch DiPlayActivity", error)
-        }
+        if (intent.action !in ACTIONS) return
+        StartupDiagnosticSnapshot.received(context, AirPlayPersistence.loadAutoStartOnBoot(context))
+        AutoStartLauncher.onTrigger(context, AutoStartPolicy.Trigger.BOOT)
     }
 
     private companion object {
-        const val TAG = "xcertplay-boot"
+        val ACTIONS = setOf(
+            Intent.ACTION_BOOT_COMPLETED,
+            "android.intent.action.QUICKBOOT_POWERON",
+            "com.htc.intent.action.QUICKBOOT_POWERON",
+        )
     }
 }

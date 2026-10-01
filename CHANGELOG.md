@@ -2,6 +2,10 @@
 
 - Save diagnostic reports privately in DiPlay when the head unit has no document picker or working Downloads provider, with explicit Share and selectable View report actions. This unblocks collecting logs for #135; its CarPlay startup failure still needs a device report.
 - Pause the head unit's automatic Wi-Fi network scans during wireless hotspot/P2P CarPlay when network ADB is already authorized. Android 10 only; the binder code is read from the firmware. Same LAN keeps normal station scanning. Controller leases share one serial worker, and a durable recovery marker retries failed restores after teardown or app restart. A contributor reported periodic scan stutter on DiLink 3; the updated lifecycle still needs a vehicle retest.
+- Open DiPlay when the selected iPhone joins the car's Bluetooth (opt-in, *Open when your iPhone connects*). Head units usually wake from sleep instead of rebooting, so the boot trigger alone never fired on an ordinary drive; reported on a Song Plus (DiLink 4.0).
+- *Open after the car starts* also reacts to quick boot.
+- Android 10+ only lets DiPlay open itself from the background with *Display over other apps*; the settings page offers the permission, and without it DiPlay posts a notification to tap. Repeated triggers within 30 s count once; nothing happens while a CarPlay session runs.
+- Decision logic is covered by unit tests. Not yet validated in a car.
 
 # DiPlay 0.2.11 — 2026-10-03
 

@@ -191,6 +191,11 @@ class DiPlayActivity : ComponentActivity() {
         automaticVehicleValidationStarted = false
         scheduleAutomaticVehicleValidation()
         handleWirelessRecovery()
+        // The iPhone joined the car's Bluetooth while DiPlay was already open.
+        if (intent.getStringExtra(AutoStartLauncher.EXTRA_AUTO_START) == AutoStartLauncher.TRIGGER_BLUETOOTH &&
+            setupError == null && !CarPlayBackgroundSession.hasSession()) {
+            handler.post { connect(AirPlayPersistence.loadWirelessEnabled(this)) }
+        }
     }
     override fun onSaveInstanceState(outState: Bundle) {
         outState.putString("page", page)
@@ -225,15 +230,17 @@ class DiPlayActivity : ComponentActivity() {
             return
         }
         handler.removeCallbacks(tick); handler.post(tick)
-        // Back from the car settings: refresh the car hotspot reminder on the home page.
+        // Back from the car settings: refresh the car hotspot reminder and the overlay permission row on the home page.
         if (!initialLaunch && !adbSwitchChangePending && !pausedForAdbSwitchChange &&
             (page == "home" || page == "settings" || page == "connection")) render()
         pausedForAdbSwitchChange = false
         if (initialLaunch) {
             initialLaunch = false
             startCarHotspotOnLaunch()
+            // A Bluetooth start means the iPhone is here: connect even if "Connect when DiPlay opens" is off.
+            val bluetoothStart = intent.getStringExtra(AutoStartLauncher.EXTRA_AUTO_START) == AutoStartLauncher.TRIGGER_BLUETOOTH
             if (setupError == null && !CarPlayBackgroundSession.hasSession() &&
-                DiPlayPreferences.autoConnect(this) && intent.getStringExtra("page") == null) {
+                (DiPlayPreferences.autoConnect(this) || bluetoothStart) && intent.getStringExtra("page") == null) {
                 handler.post { connect(AirPlayPersistence.loadWirelessEnabled(this)) }
             }
         }
@@ -481,6 +488,7 @@ class DiPlayActivity : ComponentActivity() {
         }
         section(content, getString(R.string.automatic_connection), R.drawable.ic_dp_automation) { card ->
             toggle(card, getString(R.string.connect_when_diplay_opens), getString(R.string.use_your_last_connection_type_and_selected_iphone), DiPlayPreferences.autoConnect(this)) { DiPlayPreferences.saveAutoConnect(this, it) }
+            toggle(card, getString(R.string.open_when_your_iphone_connects), getString(R.string.start_diplay_and_connect_when_the_iphone_you_chose_joins), DiPlayPreferences.autoStartOnBluetooth(this)) { DiPlayPreferences.saveAutoStartOnBluetooth(this, it) }
             adbToggle(card, R.string.open_after_the_car_starts,
                 R.string.availability_depends_on_your_head_unit_s_startup_settings,
                 read = { AirPlayPersistence.loadAutoStartOnBoot(this) },
@@ -496,6 +504,10 @@ class DiPlayActivity : ComponentActivity() {
                 UsbAutoConfirmService.isEnabled(this),
             ) {
                 UsbAutoConfirmService.openSettings(this)
+            }
+            if (!AutoStartLauncher.canDrawOverlays(this)) {
+                card.addView(label(getString(R.string.android_lets_diplay_open_itself_from_the_background_only_wi), 14, WARNING).apply { setPadding(0, dp(12), 0, 0) })
+                card.addView(button(getString(R.string.allow_display_over_other_apps), false) { openSystem(AutoStartLauncher.overlayPermissionIntent(this)) }, matchButton(12, 60))
             }
             card.addView(button("${getString(R.string.choose_iphone_prefix)}${DiPlayPreferences.phoneName(this)}", false) { choosePhone() }, matchButton(12, 60))
         }

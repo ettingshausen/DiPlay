@@ -119,7 +119,7 @@
     <string name="automatic_connection">Conexión automática</string>
     <string name="automatic_map_enabled_open_the_cluster_map_card_or_select">Mapa automático activado. Abre la tarjeta del mapa del cuadro o selecciona el tema del mapa.</string>
     <string name="automatic_map_setup_adb">Configuración automática del mapa · ADB</string>
-    <string name="availability_depends_on_your_head_unit_s_startup_settings">La disponibilidad depende de los ajustes de inicio de tu unidad principal.</string>
+    <string name="availability_depends_on_your_head_unit_s_startup_settings">Solo tras un reinicio completo. La disponibilidad depende de los ajustes de inicio de tu unidad principal.</string>
     <string name="back">Atrás</string>
     <string name="back_to_diplay">Volver a DiPlay</string>
     <string name="band">Banda</string>
@@ -261,6 +261,13 @@
     <string name="one_time_setup_on_this_car">Configuración única en este coche</string>
     <string name="open">Abrir</string>
     <string name="open_after_the_car_starts">Abrir después de arrancar el coche</string>
+    <string name="open_when_your_iphone_connects">Abrir cuando se conecte tu iPhone</string>
+    <string name="start_diplay_and_connect_when_the_iphone_you_chose_joins">Abre DiPlay y se conecta cuando el iPhone que elegiste se une al Bluetooth del coche. Funciona también después de que el coche despierte del reposo.</string>
+    <string name="android_lets_diplay_open_itself_from_the_background_only_wi">Android solo deja que DiPlay se abra desde segundo plano con el permiso «Mostrar sobre otras apps». Sin él, DiPlay mostrará una notificación para tocar.</string>
+    <string name="allow_display_over_other_apps">Permitir mostrar sobre otras apps</string>
+    <string name="automatic_start">Inicio automático</string>
+    <string name="your_iphone_is_connected_tap_to_start_carplay">Tu iPhone está conectado. Toca para iniciar CarPlay.</string>
+    <string name="tap_to_start_carplay">Toca para iniciar CarPlay.</string>
     <string name="open_bluetooth">Abrir Bluetooth</string>
     <string name="open_car_hotspot_settings">Abrir ajustes del punto de acceso del coche</string>
     <string name="open_car_settings">Abrir ajustes del coche</string>
