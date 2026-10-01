@@ -1,0 +1,62 @@
+name: Car-test APK
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: 'DiPlay release tag that provides the accessory identity (the published APK carries it by design)'
+        required: false
+        default: 'v0.2.8'
+
+permissions:
+  contents: read
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject credential files in public source
+        run: python3 scripts/check_public_tree.py
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+      - uses: android-actions/setup-android@v3
+        with:
+          packages: platform-tools platforms;android-37.0 build-tools;36.0.0 ndk;28.2.13676358
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Extract the runtime identity from the published release APK
+        run: |
+          # docs/THIRD_PARTY_NOTICES.md: the published release APK deliberately bundles the
+          # experimental accessory identity, so it is public by design. This job reuses exactly
+          # those two files for a personal car-test build. They stay in RUNNER_TEMP and never
+          # enter the repository, artifacts or logs.
+          TAG="${{ inputs.release_tag }}"
+          VERSION="${TAG#v}"
+          curl -fsSL -o release.apk \
+            "https://github.com/shihabal3amri/DiPlay/releases/download/${TAG}/DiPlay-${VERSION}.apk"
+          mkdir -p "$RUNNER_TEMP/auth-assets/offline-mfi"
+          unzip -o release.apk 'assets/offline-mfi/*' -d extracted
+          mv extracted/assets/offline-mfi/identity.pk8 extracted/assets/offline-mfi/certificate.p7b \
+            "$RUNNER_TEMP/auth-assets/offline-mfi/"
+          rm -rf release.apk extracted
+      - name: Restore a stable test signing key when the secret is configured
+        env:
+          DEBUG_KEYSTORE_BASE64: ${{ secrets.CAR_TEST_DEBUG_KEYSTORE_BASE64 }}
+        run: |
+          mkdir -p ~/.android
+          if [ -n "$DEBUG_KEYSTORE_BASE64" ]; then
+            echo "$DEBUG_KEYSTORE_BASE64" | base64 -d > ~/.android/debug.keystore
+            echo "Using the CAR_TEST_DEBUG_KEYSTORE_BASE64 secret; upgrades install over the previous test build."
+          else
+            echo "No signing secret configured; Gradle generates a fresh debug key and each build replaces, not upgrades, the previous test build."
+          fi
+      - name: Build the standalone car-test APK
+        run: DIPLAY_AUTH_ASSETS_DIR="$RUNNER_TEMP/auth-assets" ./gradlew :mobile:assembleStandaloneDebug --stacktrace
+      - name: Upload the car-test APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: DiPlay-car-test-apk
+          path: mobile/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
