@@ -1,0 +1,1584 @@
+DiPlay 0.2.9 · private beta diagnostic report
+Android 10 / API 29
+Head unit: BYD AUTO DiLink4.0 For BYD AUTO
+Connection: wireless
+Authentication: local experimental beta identity; no remote fallback
+CarPlay setup: ready
+Saved video preference (may differ from active session): HEVC; 30 fps
+CarPlay size: Medium
+Saved resolution preference (may differ from active session): 100%
+Session: active
+Head-unit board: SM6350; hardware: qcom; build: QKQ1.210218.001 release-keys
+
+--- Last display negotiation (timestamps distinguish it from current settings) ---
+2026-10-02 19:36:56.643 Display request selected=Default percent=100 surface=1920x1080 resolution=100% base=1920x1080 candidate=1920x1080 fps=30 codec=HEVC softwareHevc=false
+2026-10-02 19:36:56.644 Decoder capability enlargement check not required
+2026-10-02 19:36:56.645 Display effective percent=100 canvas=1920x1080 decision=not_enlarging physical=300x169mm safeArea=AirPlayInsets(top=0, bottom=0, left=0, right=0) drawOutside=true
+2026-10-02 19:37:01.515 Phone display peer model=iPhone15,2 ios=27.0.1 airplay=980.77.1
+2026-10-02 19:37:01.902 Video: decoder=OMX.qcom.video.decoder.hevc mime=video/hevc size=1920x1080
+2026-10-02 19:37:01.950 Video: output format requested=1920x1080 coded=1920x1088 crop=0,0,1919,1079 stride=1920 slice=1088 color=1/1/2
+
+--- previous-7.log ---
+DiPlay log started 2026-10-02 16:08:43.341 pid=24349 path=/data/user/0/com.shihab.diplay/files/logs/diplay.log
+16:08:43.355  Host started; MFI target=本地离线; transport=wireless
+16:08:43.380  Texture surface created
+16:08:43.881  Display detected: 1920x1080
+16:08:43.892  CarPlay size=Default canvas=1920x1080
+16:08:43.897  Display request selected=Default percent=100 surface=1920x1080 resolution=100% base=1920x1080 candidate=1920x1080 fps=30 codec=HEVC softwareHevc=false
+16:08:43.898  Decoder capability enlargement check not required
+16:08:43.899  Display effective percent=100 canvas=1920x1080 decision=not_enlarging physical=300x169mm safeArea=AirPlayInsets(top=0, bottom=0, left=0, right=0) drawOutside=true
+16:08:43.911  Starting CarPlay controller at 1920x1080 -> 1920x1080 (1.0x) physical=300x169mm video=HEVC decoder=hardware microphone=true location=enabled mfi=本地离线
+16:08:43.926  mfi discovery backend=LocalOffline remoteFallback=disabled
+16:08:43.935  STEP mfi/start: preparing the configured MFi authentication provider
+16:08:43.936  STEP mfi/ready: MFi authentication provider is ready
+16:08:43.955  location provider prewarmed=true
+16:08:43.956  STEP wifi/ap: starting the wireless CarPlay access point
+16:08:43.958  wireless bring-up generation=1 starting
+16:08:43.958  Manual hotspot configReadable=false security=WPA_WPA2 channelKnown=false hardwareAddressKnown=true iface=wlan0 family=IPv6
+16:08:43.969  wireless hotspot backend=Manual hotspot iface=wlan0 family=IPv6 identitySource=interface host=[ip] band=Auto channel=0 frequency=unknownMHz
+16:08:43.970  STEP bt/select: waiting for a paired or connected iPhone
+16:08:43.972  STEP network/attach: attaching the AirPlay network transport
+16:08:43.987  wireless AirPlay listener attached bind=[ip] port=7000
+16:08:44.213  wireless Bonjour services started mode=interface iface=wlan0
+16:08:44.213  STEP bt/rfcomm: connecting to the iPhone iAP2 RFCOMM service
+16:08:44.214  wireless RFCOMM connecting address=[address] uuid=[identifier]
+16:08:44.571  wireless RFCOMM connected address=[address]
+16:08:44.572  wireless iAP2 CSM channel opened over RFCOMM
+16:08:44.573  STEP iap2/wireless: Bluetooth control loop running
+16:08:44.589  wireless Bluetooth iAP2 control starting
+16:08:44.708  IAP2 READY [wireless-rfcomm] ready=true
+16:08:44.922  iap2 identification accepted
+16:08:45.071  iap2 mfi rx=0xaa02 challenge bytes=32
+16:08:45.074  mfi local signature count=1 digestBytes=32
+16:08:45.077  iap2 mfi tx=0xaa03 signature bytes=64
+16:08:45.363  iap2 mfi rx=0xaa05 authentication-succeeded
+16:08:45.364  iap2 authentication accepted
+16:08:45.373  iap2 subscriptions sent
+16:08:45.375  iap2 rx=0x5702 request-wifi-configuration
+16:08:45.377  iap2 tx=0x5703 accessory-wifi-configuration
+16:08:45.383  iap2 rx=0x4e0d wireless-carplay-update available=true
+16:08:45.393  iap2 rx=0x4e0e device-transport-identifier bluetooth=[address] usb=[identifier]; resending 0x5703
+16:08:45.395  iap2 tx=0x5703 post-transport accessory-wifi-configuration
+16:08:45.418  iap2 rx=0x4300 carplay-availability
+16:08:45.423  iap2 tx=0x4301 carplay-start-session
+16:08:45.427  iap2 rx=0x5001
+16:08:45.436  iap2 rx=0xae01
+16:08:45.437  iap2 rx=0xae01
+16:08:45.447  iap2 rx=0xae01
+16:08:45.453  iap2 rx=0x5001
+16:08:45.465  iap2 rx=0x5001
+16:08:45.467  iap2 rx=0x5001
+16:08:45.534  iap2 rx=0x4158
+16:08:45.536  iap2 rx=0x4155
+16:08:46.614  TCP peer health enabled idle=10s interval=3s count=3 deadline=20000ms; no video-idle timeout
+16:08:47.028  airplay control encryption enabled
+16:08:47.043  mfi local signature count=2 digestBytes=32
+16:08:47.080  airplay SETUP keys=[deviceID, features, keepAliveLowPower, macAddress, model, name, osBuildVersion, osName, osVersion, sessionCorrelationUUID, sessionUUID, sourceVersion, statsCollectionEnabled, timingPort, updateSessionRequest]
+16:08:47.083  Phone display peer model=iPhone15,2 ios=27.0.1 airplay=980.77.1
+16:08:47.097  airplay event connection accepted from /[ip]:57178
+16:08:47.106  airplay /info displays=[{uuid=[identifier], type=110, maxFPS=30, widthPixels=1920, heightPixels=1080, widthPhysical=300, heightPhysical=169, features=10, primaryInputDevice=1, viewAreas=[{widthPixels=1920, heightPixels=1080, originXPixels=0, originYPixels=0, safeArea={widthPixels=1920, heightPixels=1080, originXPixels=0, originYPixels=0, drawUIOutsideSafeArea=true}}], initialViewArea=0}]
+16:08:47.177  AirPlay session active controller=[identifier] peer=[ip]
+16:08:47.178  AirPlay session active
+16:08:47.223  airplay SETUP keys=[streams]
+16:08:47.224  AirPlay iAP SETUP uuid=[identifier] seed=8986966782643061786 streamConnectionID=none
+16:08:47.227  AirPlay iAP tunnel listening address=[ip] port=37475
+16:08:47.227  airplay data stream type=130 accepted=true dataPort=37475
+16:08:47.228  airplay SETUP response streams=[{type=130, streamID=1, dataPort=37475}]
+16:08:47.230  wireless type-130 tunnel data stream accepted
+16:08:47.231  wireless iAP2 tunnel control starting
+16:08:47.264  airplay command type=modesChanged keys=[appStates, resources]
+16:08:47.265  AirPlay command type=modesChanged params=appStates,resources
+16:08:47.268  IAP2 READY [wireless-tunnel] ready=true
+16:08:47.396  iAP tunnel iap2 identification accepted
+16:08:47.433  airplay command type=disableBluetooth keys=[deviceID]
+16:08:47.434  AirPlay command type=disableBluetooth params=deviceID
+16:08:47.434  wireless CarPlay Bluetooth handoff requested; waiting for tunnel iAP2 readiness
+16:08:47.522  iAP tunnel iap2 mfi rx=0xaa02 challenge bytes=32
+16:08:47.523  mfi local signature count=3 digestBytes=32
+16:08:47.524  iAP tunnel iap2 mfi tx=0xaa03 signature bytes=64
+16:08:47.613  airplay command type=modesChanged keys=[appStates, resources]
+16:08:47.613  AirPlay command type=modesChanged params=appStates,resources
+16:08:47.627  airplay SETUP keys=[streams]
+16:08:47.630  airplay screen stream type=110 dataPort=37553
+16:08:47.645  airplay SETUP response streams=[{type=110, dataPort=37553}]
+16:08:47.688  iAP tunnel iap2 mfi rx=0xaa05 authentication-succeeded
+16:08:47.689  iAP tunnel iap2 authentication accepted
+16:08:47.692  iAP tunnel iap2 subscriptions sent
+16:08:47.692  wireless iAP2 tunnel ready; handoffRequested=true
+16:08:47.694  iAP tunnel iap2 rx=0x5702 request-wifi-configuration
+16:08:47.694  wireless handoff ready; closing Bluetooth bootstrap transport
+16:08:47.695  wireless RFCOMM EOF: iap2State=POST_TRANSPORT_WIFI_CONFIG_SENT wirelessCarPlayAvailable=true transportIdentifier=true carPlayStartSessions=1 postTransportConfigs=1 handoffRequested=true tunnelReady=true wirelessActive=true
+16:08:47.696  iAP tunnel iap2 tx=0x5703 accessory-wifi-configuration
+16:08:47.697  iAP tunnel iap2 rx=0x4e0d wireless-carplay-update available=true
+16:08:47.699  iAP tunnel iap2 rx=0x4e0e device-transport-identifier bluetooth=[address] usb=[identifier]; resending 0x5703
+16:08:47.699  IAP2 CLOSE [wireless-rfcomm]
+16:08:47.700  STEP handoff/complete: tunnel iAP2 ready; Bluetooth bootstrap released
+16:08:47.712  iAP tunnel iap2 tx=0x5703 post-transport accessory-wifi-configuration
+16:08:47.811  iAP tunnel iap2 rx=0x4300 carplay-availability
+16:08:47.812  iAP tunnel iap2 tx=0x4301 carplay-start-session
+16:08:47.813  iAP tunnel iap2 rx=0x5001
+16:08:47.814  Video: decoder=OMX.qcom.video.decoder.hevc mime=video/hevc size=1920x1080
+16:08:47.819  iAP tunnel iap2 rx=0x5001
+16:08:47.819  iAP tunnel iap2 rx=0xae01
+16:08:47.819  iAP tunnel iap2 rx=0xae01
+16:08:47.820  iAP tunnel iap2 rx=0xae01
+16:08:47.820  iAP tunnel iap2 rx=0x5001
+16:08:47.821  iAP tunnel iap2 rx=0x5001
+16:08:47.821  iAP tunnel iap2 rx=0x4158
+16:08:47.821  iAP tunnel iap2 rx=0x4155
+16:08:47.822  Video recovery: requested keyframe sent=true
+16:08:47.856  Video: output format requested=1920x1080 coded=1920x1088 crop=0,0,1919,1079 stride=1920 slice=1088 color=1/1/2
+16:08:47.857  Video: first frame rendered
+16:08:52.765  Video: video stats rx=14.6fps shown=14.6fps maxGap=129ms kbps=1148 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:08:55.284  airplay event connection closed
+16:08:55.297  airplay control closing reason=control I/O failed: Socket closed activeStreams=[130, 110]
+16:08:55.297  Receive: video packets=78 bytes=730073 readMaxMs=96 processMaxUs=3863 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=93 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=true
+16:08:55.298  IAP2 RX [wireless-tunnel] FAILED: iAP2 link ended
+16:08:55.298  tunneled iAP2 control failed: iAP2 link ended
+16:08:55.299  ERROR iAP2 link ended
+16:08:55.300  失败：iAP2 link ended; retrying in 2000ms
+16:08:55.301  AirPlay session ended peer=[ip]
+16:08:55.302  AirPlay session ended; reconnecting from scratch
+16:08:57.304  Reconnecting after 失败：iAP2 link ended
+16:08:59.341  CarPlay size=Default canvas=1920x1080
+16:08:59.344  Display request selected=Default percent=100 surface=1920x1080 resolution=100% base=1920x1080 candidate=1920x1080 fps=30 codec=HEVC softwareHevc=false
+16:08:59.346  Decoder capability enlargement check not required
+16:08:59.347  Display effective percent=100 canvas=1920x1080 decision=not_enlarging physical=300x169mm safeArea=AirPlayInsets(top=0, bottom=0, left=0, right=0) drawOutside=true
+16:08:59.355  Starting CarPlay controller at 1920x1080 -> 1920x1080 (1.0x) physical=300x169mm video=HEVC decoder=hardware microphone=true location=enabled mfi=本地离线
+16:08:59.359  mfi discovery backend=LocalOffline remoteFallback=disabled
+16:08:59.365  STEP mfi/start: preparing the configured MFi authentication provider
+16:08:59.373  STEP mfi/ready: MFi authentication provider is ready
+16:08:59.391  location provider prewarmed=true
+16:08:59.392  STEP wifi/ap: starting the wireless CarPlay access point
+16:08:59.392  wireless bring-up generation=1 starting
+16:08:59.406  Manual hotspot configReadable=false security=WPA_WPA2 channelKnown=false hardwareAddressKnown=true iface=wlan0 family=IPv6
+16:08:59.407  wireless hotspot backend=Manual hotspot iface=wlan0 family=IPv6 identitySource=interface host=[ip] band=Auto channel=0 frequency=unknownMHz
+16:08:59.408  STEP bt/select: waiting for a paired or connected iPhone
+16:08:59.409  STEP network/attach: attaching the AirPlay network transport
+16:08:59.425  wireless AirPlay listener attached bind=[ip] port=7000
+16:08:59.431  wireless Bonjour services started mode=interface iface=wlan0
+16:08:59.431  STEP bt/rfcomm: connecting to the iPhone iAP2 RFCOMM service
+16:08:59.442  wireless RFCOMM connecting address=[address] uuid=[identifier]
+16:08:59.931  wireless RFCOMM connected address=[address]
+16:08:59.934  wireless iAP2 CSM channel opened over RFCOMM
+16:08:59.936  STEP iap2/wireless: Bluetooth control loop running
+16:08:59.938  wireless Bluetooth iAP2 control starting
+16:09:00.048  IAP2 READY [wireless-rfcomm] ready=true
+16:09:00.216  iap2 identification accepted
+16:09:00.371  iap2 mfi rx=0xaa02 challenge bytes=32
+16:09:00.374  mfi local signature count=1 digestBytes=32
+16:09:00.378  iap2 mfi tx=0xaa03 signature bytes=64
+16:09:00.536  iap2 mfi rx=0xaa05 authentication-succeeded
+16:09:00.537  iap2 authentication accepted
+16:09:00.541  iap2 subscriptions sent
+16:09:00.543  iap2 rx=0x5702 request-wifi-configuration
+16:09:00.544  iap2 tx=0x5703 accessory-wifi-configuration
+16:09:00.548  iap2 rx=0x4e0d wireless-carplay-update available=true
+16:09:00.561  iap2 rx=0x4e0e device-transport-identifier bluetooth=[address] usb=[identifier]; resending 0x5703
+16:09:00.563  iap2 tx=0x5703 post-transport accessory-wifi-configuration
+16:09:00.584  iap2 rx=0x4300 carplay-availability
+16:09:00.586  iap2 tx=0x4301 carplay-start-session
+16:09:00.589  iap2 rx=0x5001
+16:09:00.597  iap2 rx=0x5001
+16:09:00.603  iap2 rx=0x5001
+16:09:00.608  iap2 rx=0xae01
+16:09:00.611  iap2 rx=0xae01
+16:09:00.612  iap2 rx=0xae01
+16:09:00.613  iap2 rx=0x5001
+16:09:00.614  iap2 rx=0x4158
+16:09:00.655  iap2 rx=0x4155
+16:09:00.725  TCP peer health enabled idle=10s interval=3s count=3 deadline=20000ms; no video-idle timeout
+16:09:00.952  airplay control encryption enabled
+16:09:00.962  mfi local signature count=2 digestBytes=32
+16:09:00.985  airplay SETUP keys=[deviceID, features, keepAliveLowPower, macAddress, model, name, osBuildVersion, osName, osVersion, sessionCorrelationUUID, sessionUUID, sourceVersion, statsCollectionEnabled, timingPort, updateSessionRequest]
+16:09:00.986  Phone display peer model=iPhone15,2 ios=27.0.1 airplay=980.77.1
+16:09:00.997  airplay event connection accepted from /[ip]:57207
+16:09:01.000  airplay /info displays=[{uuid=[identifier], type=110, maxFPS=30, widthPixels=1920, heightPixels=1080, widthPhysical=300, heightPhysical=169, features=10, primaryInputDevice=1, viewAreas=[{widthPixels=1920, heightPixels=1080, originXPixels=0, originYPixels=0, safeArea={widthPixels=1920, heightPixels=1080, originXPixels=0, originYPixels=0, drawUIOutsideSafeArea=true}}], initialViewArea=0}]
+16:09:01.069  AirPlay session active controller=[identifier] peer=[ip]
+16:09:01.069  AirPlay session active
+16:09:01.103  airplay SETUP keys=[streams]
+16:09:01.103  AirPlay iAP SETUP uuid=[identifier] seed=16740759754675620665 streamConnectionID=none
+16:09:01.105  AirPlay iAP tunnel listening address=[ip] port=42313
+16:09:01.106  airplay data stream type=130 accepted=true dataPort=42313
+16:09:01.106  airplay SETUP response streams=[{type=130, streamID=1, dataPort=42313}]
+16:09:01.109  wireless type-130 tunnel data stream accepted
+16:09:01.109  wireless iAP2 tunnel control starting
+16:09:01.116  airplay command type=modesChanged keys=[appStates, resources]
+16:09:01.117  AirPlay command type=modesChanged params=appStates,resources
+16:09:01.308  airplay command type=modesChanged keys=[appStates, resources]
+16:09:01.310  AirPlay command type=modesChanged params=appStates,resources
+16:09:01.316  airplay command type=disableBluetooth keys=[deviceID]
+16:09:01.318  AirPlay command type=disableBluetooth params=deviceID
+16:09:01.319  wireless CarPlay Bluetooth handoff requested; waiting for tunnel iAP2 readiness
+16:09:01.343  airplay SETUP keys=[streams]
+16:09:01.345  airplay screen stream type=110 dataPort=39203
+16:09:01.362  airplay SETUP response streams=[{type=110, dataPort=39203}]
+16:09:01.518  IAP2 READY [wireless-tunnel] ready=true
+16:09:01.535  iap2 rx=0xfffa start-location-information components=[0, 1, 2, 32769, 32770]
+16:09:01.544  iap2 tx=0xfffb location-information
+16:09:01.544  Video: decoder=OMX.qcom.video.decoder.hevc mime=video/hevc size=1920x1080
+16:09:01.547  Video recovery: requested keyframe sent=true
+16:09:01.580  Video: output format requested=1920x1080 coded=1920x1088 crop=0,0,1919,1079 stride=1920 slice=1088 color=1/1/2
+16:09:01.580  Video: first frame rendered
+16:09:01.643  iAP tunnel iap2 identification accepted
+16:09:01.775  iAP tunnel iap2 mfi rx=0xaa02 challenge bytes=32
+16:09:01.780  mfi local signature count=3 digestBytes=32
+16:09:01.781  iAP tunnel iap2 mfi tx=0xaa03 signature bytes=64
+16:09:01.912  iAP tunnel iap2 mfi rx=0xaa05 authentication-succeeded
+16:09:01.915  iAP tunnel iap2 authentication accepted
+16:09:01.916  iAP tunnel iap2 subscriptions sent
+16:09:01.917  wireless iAP2 tunnel ready; handoffRequested=true
+16:09:01.919  iAP tunnel iap2 location request continues from the Bluetooth link components=[0, 1, 2, 32769, 32770]
+16:09:01.920  iAP tunnel iap2 tx=0xfffb location-information
+16:09:01.921  iAP tunnel iap2 rx=0x5702 request-wifi-configuration
+16:09:01.922  iAP tunnel iap2 tx=0x5703 accessory-wifi-configuration
+16:09:01.923  iAP tunnel iap2 rx=0x4e0d wireless-carplay-update available=true
+16:09:01.924  wireless handoff ready; closing Bluetooth bootstrap transport
+16:09:01.925  iAP tunnel iap2 rx=0x4e0e device-transport-identifier bluetooth=[address] usb=[identifier]; resending 0x5703
+16:09:01.928  wireless RFCOMM EOF: iap2State=POST_TRANSPORT_WIFI_CONFIG_SENT wirelessCarPlayAvailable=true transportIdentifier=true carPlayStartSessions=1 postTransportConfigs=1 handoffRequested=true tunnelReady=true wirelessActive=true
+16:09:01.930  iAP tunnel iap2 tx=0x5703 post-transport accessory-wifi-configuration
+16:09:01.931  IAP2 CLOSE [wireless-rfcomm]
+16:09:01.931  STEP handoff/complete: tunnel iAP2 ready; Bluetooth bootstrap released
+16:09:01.932  iAP tunnel iap2 rx=0x5001
+16:09:01.933  iAP tunnel iap2 rx=0x5001
+16:09:01.933  iAP tunnel iap2 rx=0x5001
+16:09:01.934  iAP tunnel iap2 rx=0x5001
+16:09:01.934  iAP tunnel iap2 rx=0xae01
+16:09:01.934  iAP tunnel iap2 rx=0xae01
+16:09:01.935  iAP tunnel iap2 rx=0xae01
+16:09:01.935  iAP tunnel iap2 rx=0x4158
+16:09:01.935  iAP tunnel iap2 rx=0x4155
+16:09:01.936  iAP tunnel iap2 rx=0x4300 carplay-availability
+16:09:01.936  iAP tunnel iap2 tx=0x4301 carplay-start-session
+16:09:02.897  Three-finger swipe tracking started
+16:09:05.982  Video: recovery: video backlog exceeded 250 ms; waiting for keyframe
+16:09:06.056  Video recovery: requested keyframe sent=true
+16:09:06.111  Video: decoder=OMX.qcom.video.decoder.hevc mime=video/hevc size=1920x1080
+16:09:06.219  Video: output format requested=1920x1080 coded=1920x1088 crop=0,0,1919,1079 stride=1920 slice=1088 color=1/1/2
+16:09:06.220  Video: first frame rendered
+16:09:06.381  Receive: video packets=151 bytes=1251512 readMaxMs=147 processMaxUs=7580 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=116 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:09:06.513  Video: video stats rx=29.0fps shown=24.8fps maxGap=140ms kbps=2019 recoveries=1 touch2frame avg=1588ms max=6277ms n=4 touchSendMax=5ms
+16:09:11.413  Receive: video packets=97 bytes=256743 readMaxMs=868 processMaxUs=4555 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=868 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:09:11.515  Video: video stats rx=18.2fps shown=18.4fps maxGap=868ms kbps=337 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:09:15.327  Receive: video packets=18 bytes=21136 readMaxMs=867 processMaxUs=967 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=867 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=true
+16:09:15.331  airplay control closing reason=control I/O failed: Software caused connection abort activeStreams=[130, 110]
+16:09:15.334  airplay event connection closed
+16:09:15.340  AirPlay session ended peer=[ip]
+16:09:15.344  AirPlay session ended; reconnecting from scratch
+16:09:15.346  AirPlay session ended; retrying in 2000ms
+16:09:15.349  IAP2 RX [wireless-tunnel] FAILED: AirPlay iAP tunnel failed: SocketException: Software caused connection abort
+16:09:15.350  tunneled iAP2 control failed: AirPlay iAP tunnel failed: SocketException: Software caused connection abort
+16:09:15.352  ERROR AirPlay iAP tunnel failed: SocketException: Software caused connection abort
+16:09:15.356  AirPlay transport error: Socket closed
+16:09:15.357  CarPlay transport error: Socket closed; reconnecting from scratch
+16:09:17.349  Reconnecting after AirPlay session ended
+16:09:21.363  CarPlay size=Default canvas=1920x1080
+16:09:21.370  Display request selected=Default percent=100 surface=1920x1080 resolution=100% base=1920x1080 candidate=1920x1080 fps=30 codec=HEVC softwareHevc=false
+16:09:21.372  Decoder capability enlargement check not required
+16:09:21.372  Display effective percent=100 canvas=1920x1080 decision=not_enlarging physical=300x169mm safeArea=AirPlayInsets(top=0, bottom=0, left=0, right=0) drawOutside=true
+16:09:21.379  Starting CarPlay controller at 1920x1080 -> 1920x1080 (1.0x) physical=300x169mm video=HEVC decoder=hardware microphone=true location=enabled mfi=本地离线
+16:09:21.386  mfi discovery backend=LocalOffline remoteFallback=disabled
+16:09:21.394  STEP mfi/start: preparing the configured MFi authentication provider
+16:09:21.395  STEP mfi/ready: MFi authentication provider is ready
+16:09:21.402  location provider prewarmed=true
+16:09:21.403  STEP wifi/ap: starting the wireless CarPlay access point
+16:09:21.403  wireless bring-up generation=1 starting
+16:09:21.404  wireless bring-up failed: The car hotspot is off. Turn it on in the car settings and connect again.
+16:09:21.404  ERROR The car hotspot is off. Turn it on in the car settings and connect again.
+16:09:21.405  失败：The car hotspot is off. Turn it on in the car settings and connect again.; retrying in 4000ms
+16:09:25.409  Reconnecting after 失败：The car hotspot is off. Turn it on in the car settings and connect again.
+16:09:25.419  CarPlay size=Default canvas=1920x1080
+16:09:25.420  Display request selected=Default percent=100 surface=1920x1080 resolution=100% base=1920x1080 candidate=1920x1080 fps=30 codec=HEVC softwareHevc=false
+16:09:25.422  Decoder capability enlargement check not required
+16:09:25.423  Display effective percent=100 canvas=1920x1080 decision=not_enlarging physical=300x169mm safeArea=AirPlayInsets(top=0, bottom=0, left=0, right=0) drawOutside=true
+16:09:25.426  Starting CarPlay controller at 1920x1080 -> 1920x1080 (1.0x) physical=300x169mm video=HEVC decoder=hardware microphone=true location=enabled mfi=本地离线
+16:09:25.429  mfi discovery backend=LocalOffline remoteFallback=disabled
+16:09:25.437  STEP mfi/start: preparing the configured MFi authentication provider
+16:09:25.438  STEP mfi/ready: MFi authentication provider is ready
+16:09:25.445  location provider prewarmed=true
+16:09:25.446  STEP wifi/ap: starting the wireless CarPlay access point
+16:09:25.446  wireless bring-up generation=1 starting
+16:09:25.447  wireless bring-up failed: The car hotspot is off. Turn it on in the car settings and connect again.
+16:09:25.447  ERROR The car hotspot is off. Turn it on in the car settings and connect again.
+16:09:25.448  失败：The car hotspot is off. Turn it on in the car settings and connect again.; retrying in 8000ms
+Activity destroyed
+--- previous-6.log ---
+DiPlay log started 2026-10-02 16:09:27.749 pid=24349 path=/data/user/0/com.shihab.diplay/files/logs/diplay.log
+16:09:27.758  Host started; MFI target=本地离线; transport=wireless
+16:09:27.774  Texture surface created
+16:09:28.279  Display detected: 1920x1080
+16:09:28.284  CarPlay size=Default canvas=1920x1080
+16:09:28.287  Display request selected=Default percent=100 surface=1920x1080 resolution=100% base=1920x1080 candidate=1920x1080 fps=30 codec=HEVC softwareHevc=false
+16:09:28.288  Decoder capability enlargement check not required
+16:09:28.288  Display effective percent=100 canvas=1920x1080 decision=not_enlarging physical=300x169mm safeArea=AirPlayInsets(top=0, bottom=0, left=0, right=0) drawOutside=true
+16:09:28.294  Starting CarPlay controller at 1920x1080 -> 1920x1080 (1.0x) physical=300x169mm video=HEVC decoder=hardware microphone=true location=enabled mfi=本地离线
+16:09:28.304  mfi discovery backend=LocalOffline remoteFallback=disabled
+16:09:28.314  STEP mfi/start: preparing the configured MFi authentication provider
+16:09:28.315  STEP mfi/ready: MFi authentication provider is ready
+16:09:28.331  location provider prewarmed=true
+16:09:28.331  STEP wifi/ap: starting the wireless CarPlay access point
+16:09:28.332  wireless bring-up generation=1 starting
+16:09:28.345  Wi-Fi P2P preflight wifiEnabled=true locationEnabled=true permissionGranted=true locationAccessMode=0 stationMHz=unknown stationState=DISCONNECTED reportedStationMHz=unknown fiveGhzSupported=true
+16:09:28.346  Wi-Fi P2P remembered first mode=FIXED_5_GHZ frequencyMHz=5180
+16:09:28.347  Wi-Fi P2P frameworkState=2
+16:09:28.347  Wi-Fi P2P existingGroup=false
+16:09:28.347  Wi-Fi P2P create mode=FIXED_5_GHZ frequencyMHz=5180
+16:09:28.428  Wi-Fi P2P ready mode=FIXED_5_GHZ band=5 GHz channel=36 frequencyMHz=5180
+16:09:28.428  Wi-Fi P2P channel requestedMHz=5180 actualMHz=5180 matched=true
+16:09:28.430  wireless hotspot backend=Wi-Fi P2P iface=p2p0 family=IPv6 identitySource=interface host=[ip] band=5 GHz channel=36 frequency=5180MHz
+16:09:28.447  STEP bt/select: waiting for a paired or connected iPhone
+16:09:28.448  STEP network/attach: attaching the AirPlay network transport
+16:09:28.465  wireless AirPlay listener attached bind=[ip] port=7000
+16:09:28.471  wireless Bonjour services started mode=interface iface=p2p0
+16:09:28.471  STEP bt/rfcomm: connecting to the iPhone iAP2 RFCOMM service
+16:09:28.472  wireless RFCOMM connecting address=[address] uuid=[identifier]
+16:09:28.861  wireless RFCOMM connected address=[address]
+16:09:28.863  wireless iAP2 CSM channel opened over RFCOMM
+16:09:28.865  STEP iap2/wireless: Bluetooth control loop running
+16:09:28.867  wireless Bluetooth iAP2 control starting
+16:09:29.026  IAP2 READY [wireless-rfcomm] ready=true
+16:09:29.219  iap2 identification accepted
+16:09:29.379  iap2 mfi rx=0xaa02 challenge bytes=32
+16:09:29.382  mfi local signature count=1 digestBytes=32
+16:09:29.385  iap2 mfi tx=0xaa03 signature bytes=64
+16:09:29.596  iap2 mfi rx=0xaa05 authentication-succeeded
+16:09:29.597  iap2 authentication accepted
+16:09:29.605  iap2 subscriptions sent
+16:09:29.606  iap2 rx=0x5702 request-wifi-configuration
+16:09:29.607  iap2 tx=0x5703 accessory-wifi-configuration
+16:09:29.612  iap2 rx=0x4e0d wireless-carplay-update available=true
+16:09:29.623  iap2 rx=0x4e0e device-transport-identifier bluetooth=[address] usb=[identifier]; resending 0x5703
+16:09:29.624  iap2 tx=0x5703 post-transport accessory-wifi-configuration
+16:09:29.672  iap2 rx=0x4300 carplay-availability
+16:09:29.675  iap2 tx=0x4301 carplay-start-session
+16:09:29.680  iap2 rx=0x5001
+16:09:29.702  iap2 rx=0x5001
+16:09:29.705  iap2 rx=0x5001
+16:09:29.732  iap2 rx=0x5001
+16:09:29.733  iap2 rx=0xae01
+16:09:29.733  iap2 rx=0xae01
+16:09:29.764  iap2 rx=0xae01
+16:09:29.765  iap2 rx=0x4158
+16:09:29.785  iap2 rx=0x4155
+16:09:32.459  TCP peer health enabled idle=10s interval=3s count=3 deadline=20000ms; no video-idle timeout
+16:09:34.386  airplay control encryption enabled
+16:09:34.393  mfi local signature count=2 digestBytes=32
+16:09:34.417  airplay SETUP keys=[deviceID, features, keepAliveLowPower, macAddress, model, name, osBuildVersion, osName, osVersion, sessionCorrelationUUID, sessionUUID, sourceVersion, statsCollectionEnabled, timingPort, updateSessionRequest]
+16:09:34.419  Phone display peer model=iPhone15,2 ios=27.0.1 airplay=980.77.1
+16:09:34.430  airplay event connection accepted from /[ip]:57227
+16:09:34.431  airplay /info displays=[{uuid=[identifier], type=110, maxFPS=30, widthPixels=1920, heightPixels=1080, widthPhysical=300, heightPhysical=169, features=10, primaryInputDevice=1, viewAreas=[{widthPixels=1920, heightPixels=1080, originXPixels=0, originYPixels=0, safeArea={widthPixels=1920, heightPixels=1080, originXPixels=0, originYPixels=0, drawUIOutsideSafeArea=true}}], initialViewArea=0}]
+16:09:34.502  AirPlay session active controller=[identifier] peer=[ip]
+16:09:34.503  AirPlay session active
+16:09:34.534  airplay SETUP keys=[streams]
+16:09:34.535  AirPlay iAP SETUP uuid=[identifier] seed=16279253929461908420 streamConnectionID=none
+16:09:34.538  AirPlay iAP tunnel listening address=[ip] port=42865
+16:09:34.538  airplay data stream type=130 accepted=true dataPort=42865
+16:09:34.538  airplay SETUP response streams=[{type=130, streamID=1, dataPort=42865}]
+16:09:34.540  wireless type-130 tunnel data stream accepted
+16:09:34.542  wireless iAP2 tunnel control starting
+16:09:34.547  airplay command type=modesChanged keys=[appStates, resources]
+16:09:34.548  AirPlay command type=modesChanged params=appStates,resources
+16:09:34.591  airplay command type=disableBluetooth keys=[deviceID]
+16:09:34.591  AirPlay command type=disableBluetooth params=deviceID
+16:09:34.592  wireless CarPlay Bluetooth handoff requested; waiting for tunnel iAP2 readiness
+16:09:34.642  IAP2 READY [wireless-tunnel] ready=true
+16:09:34.784  iAP tunnel iap2 identification accepted
+16:09:34.788  airplay command type=modesChanged keys=[appStates, resources]
+16:09:34.789  AirPlay command type=modesChanged params=appStates,resources
+16:09:34.813  airplay SETUP keys=[streams]
+16:09:34.815  airplay screen stream type=110 dataPort=37501
+16:09:34.816  airplay SETUP response streams=[{type=110, dataPort=37501}]
+16:09:34.949  iAP tunnel iap2 mfi rx=0xaa02 challenge bytes=32
+16:09:34.950  mfi local signature count=3 digestBytes=32
+16:09:34.951  iAP tunnel iap2 mfi tx=0xaa03 signature bytes=64
+16:09:34.955  Video: decoder=OMX.qcom.video.decoder.hevc mime=video/hevc size=1920x1080
+16:09:34.960  Video recovery: requested keyframe sent=true
+16:09:34.992  Video: output format requested=1920x1080 coded=1920x1088 crop=0,0,1919,1079 stride=1920 slice=1088 color=1/1/2
+16:09:34.997  Video: first frame rendered
+16:09:35.009  iap2 rx=0xfffa start-location-information components=[0, 1, 2, 32769, 32770]
+16:09:35.010  iap2 tx=0xfffb location-information
+16:09:35.096  iAP tunnel iap2 mfi rx=0xaa05 authentication-succeeded
+16:09:35.097  iAP tunnel iap2 authentication accepted
+16:09:35.097  iAP tunnel iap2 subscriptions sent
+16:09:35.098  Wi-Fi P2P remembered saved=true proof=authenticated_first_frame
+16:09:35.098  wireless iAP2 tunnel ready; handoffRequested=true
+16:09:35.098  iAP tunnel iap2 location request continues from the Bluetooth link components=[0, 1, 2, 32769, 32770]
+16:09:35.099  wireless handoff ready; closing Bluetooth bootstrap transport
+16:09:35.099  wireless RFCOMM EOF: iap2State=POST_TRANSPORT_WIFI_CONFIG_SENT wirelessCarPlayAvailable=true transportIdentifier=true carPlayStartSessions=1 postTransportConfigs=1 handoffRequested=true tunnelReady=true wirelessActive=true
+16:09:35.100  IAP2 CLOSE [wireless-rfcomm]
+16:09:35.100  STEP handoff/complete: tunnel iAP2 ready; Bluetooth bootstrap released
+16:09:35.101  iAP tunnel iap2 tx=0xfffb location-information
+16:09:35.101  iAP tunnel iap2 rx=0x5702 request-wifi-configuration
+16:09:35.102  iAP tunnel iap2 tx=0x5703 accessory-wifi-configuration
+16:09:35.102  iAP tunnel iap2 rx=0x4e0d wireless-carplay-update available=true
+16:09:35.103  iAP tunnel iap2 rx=0x4e0e device-transport-identifier bluetooth=[address] usb=[identifier]; resending 0x5703
+16:09:35.103  iAP tunnel iap2 tx=0x5703 post-transport accessory-wifi-configuration
+16:09:35.112  iAP tunnel iap2 rx=0x5001
+16:09:35.113  iAP tunnel iap2 rx=0x5001
+16:09:35.113  iAP tunnel iap2 rx=0x5001
+16:09:35.114  iAP tunnel iap2 rx=0x5001
+16:09:35.114  iAP tunnel iap2 rx=0xae01
+16:09:35.114  iAP tunnel iap2 rx=0xae01
+16:09:35.115  iAP tunnel iap2 rx=0xae01
+16:09:35.115  iAP tunnel iap2 rx=0x4158
+16:09:35.115  iAP tunnel iap2 rx=0x4155
+16:09:35.150  iAP tunnel iap2 rx=0x4300 carplay-availability
+16:09:35.152  iAP tunnel iap2 tx=0x4301 carplay-start-session
+16:09:39.369  Three-finger swipe tracking started
+16:09:39.881  Receive: video packets=152 bytes=1459416 readMaxMs=85 processMaxUs=4894 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=85 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:09:39.932  Video: video stats rx=29.4fps shown=29.4fps maxGap=126ms kbps=2346 recoveries=0 touch2frame avg=20ms max=34ms n=3 touchSendMax=1ms
+16:09:44.877  Receive: video packets=121 bytes=466228 readMaxMs=443 processMaxUs=3289 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=443 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:09:44.936  Video: video stats rx=22.8fps shown=21.4fps maxGap=868ms kbps=671 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:09:49.907  Receive: video packets=29 bytes=34520 readMaxMs=443 processMaxUs=575 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=443 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:09:49.937  Video: video stats rx=4.6fps shown=6.0fps maxGap=870ms kbps=46 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:09:54.929  Receive: video packets=25 bytes=28874 readMaxMs=538 processMaxUs=3453 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=538 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:09:54.947  Video: video stats rx=4.0fps shown=4.0fps maxGap=1004ms kbps=40 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:09:59.940  Video: video stats rx=4.0fps shown=4.0fps maxGap=967ms kbps=40 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:10:00.048  Receive: video packets=26 bytes=31201 readMaxMs=537 processMaxUs=600 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=537 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:10:04.948  Video: video stats rx=15.0fps shown=12.0fps maxGap=916ms kbps=2902 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:10:05.056  Receive: video packets=83 bytes=1972342 readMaxMs=509 processMaxUs=10385 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=509 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:10:05.224  Video: recovery: video backlog exceeded 250 ms; waiting for keyframe
+16:10:05.310  Video recovery: requested keyframe sent=true
+16:10:05.365  Video: decoder=OMX.qcom.video.decoder.hevc mime=video/hevc size=1920x1080
+16:10:05.511  Video: output format requested=1920x1080 coded=1920x1088 crop=0,0,1919,1079 stride=1920 slice=1088 color=1/1/2
+16:10:05.512  Video: first frame rendered
+16:10:09.951  Video: video stats rx=16.0fps shown=15.0fps maxGap=872ms kbps=1097 recoveries=1 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:10:10.351  Receive: video packets=84 bytes=554442 readMaxMs=446 processMaxUs=6963 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=446 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:10:14.951  Video: video stats rx=4.0fps shown=4.0fps maxGap=956ms kbps=50 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:10:15.350  Receive: video packets=25 bytes=35367 readMaxMs=535 processMaxUs=979 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=535 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:10:19.956  Video: video stats rx=4.0fps shown=4.0fps maxGap=872ms kbps=50 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:10:20.412  Receive: video packets=26 bytes=37113 readMaxMs=467 processMaxUs=573 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=467 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:10:24.959  Video: video stats rx=4.0fps shown=4.0fps maxGap=871ms kbps=50 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:10:25.444  Receive: video packets=26 bytes=37110 readMaxMs=469 processMaxUs=398 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=469 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:10:29.962  Video: video stats rx=4.0fps shown=4.0fps maxGap=1103ms kbps=50 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:10:30.447  Receive: video packets=25 bytes=35372 readMaxMs=575 processMaxUs=459 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=576 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:10:34.967  Video: video stats rx=4.0fps shown=4.0fps maxGap=887ms kbps=50 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:10:35.450  Receive: video packets=25 bytes=35380 readMaxMs=474 processMaxUs=364 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=474 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:10:39.970  Video: video stats rx=4.0fps shown=4.0fps maxGap=874ms kbps=50 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:10:40.496  Receive: video packets=26 bytes=37112 readMaxMs=473 processMaxUs=624 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=473 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:10:44.973  Video: video stats rx=4.0fps shown=4.0fps maxGap=871ms kbps=50 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:10:45.483  Receive: video packets=31 bytes=499395 readMaxMs=471 processMaxUs=11844 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=471 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:10:49.045  airplay control closing reason=control I/O failed: Software caused connection abort activeStreams=[130, 110]
+16:10:49.048  airplay event connection closed
+16:10:49.049  Receive: video packets=92 bytes=500430 readMaxMs=302 processMaxUs=11018 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=302 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=true
+16:10:49.051  AirPlay transport error: Socket closed
+16:10:49.053  CarPlay transport error: Socket closed; reconnecting from scratch
+16:10:49.064  CarPlay transport error: Socket closed; retrying in 2000ms
+16:10:49.069  IAP2 RX [wireless-tunnel] FAILED: AirPlay iAP tunnel failed: SocketException: Software caused connection abort
+Activity destroyed
+--- previous-5.log ---
+DiPlay log started 2026-10-02 16:11:02.072 pid=26538 path=/data/user/0/com.shihab.diplay/files/logs/diplay.log
+16:11:02.087  Host started; MFI target=本地离线; transport=wireless
+16:11:02.125  Texture surface created
+16:11:02.627  Display detected: 1920x1080
+16:11:02.632  CarPlay size=Default canvas=1920x1080
+16:11:02.638  Display request selected=Default percent=100 surface=1920x1080 resolution=100% base=1920x1080 candidate=1920x1080 fps=30 codec=HEVC softwareHevc=false
+16:11:02.639  Decoder capability enlargement check not required
+16:11:02.639  Display effective percent=100 canvas=1920x1080 decision=not_enlarging physical=300x169mm safeArea=AirPlayInsets(top=0, bottom=0, left=0, right=0) drawOutside=true
+16:11:02.649  Starting CarPlay controller at 1920x1080 -> 1920x1080 (1.0x) physical=300x169mm video=HEVC decoder=hardware microphone=true location=enabled mfi=本地离线
+16:11:02.667  mfi discovery backend=LocalOffline remoteFallback=disabled
+16:11:02.669  STEP mfi/start: preparing the configured MFi authentication provider
+16:11:02.692  STEP mfi/ready: MFi authentication provider is ready
+16:11:02.706  location provider prewarmed=true
+16:11:02.707  STEP wifi/ap: starting the wireless CarPlay access point
+16:11:02.714  wireless bring-up generation=1 starting
+16:11:02.723  Wi-Fi P2P preflight wifiEnabled=true locationEnabled=true permissionGranted=true locationAccessMode=0 stationMHz=unknown stationState=DISCONNECTED reportedStationMHz=unknown fiveGhzSupported=true
+16:11:02.723  Wi-Fi P2P remembered first mode=FIXED_5_GHZ frequencyMHz=5180
+16:11:02.728  Wi-Fi P2P frameworkState=2
+16:11:02.731  Wi-Fi P2P existingGroup=false
+16:11:02.735  Wi-Fi P2P create mode=FIXED_5_GHZ frequencyMHz=5180
+16:11:02.909  Wi-Fi P2P ready mode=FIXED_5_GHZ band=5 GHz channel=36 frequencyMHz=5180
+16:11:02.910  Wi-Fi P2P channel requestedMHz=5180 actualMHz=5180 matched=true
+16:11:02.912  wireless hotspot backend=Wi-Fi P2P iface=p2p0 family=IPv6 identitySource=interface host=[ip] band=5 GHz channel=36 frequency=5180MHz
+16:11:02.916  STEP bt/select: waiting for a paired or connected iPhone
+16:11:02.927  STEP network/attach: attaching the AirPlay network transport
+16:11:02.945  wireless AirPlay listener attached bind=[ip] port=7000
+Activity destroyed
+--- previous-4.log ---
+DiPlay log started 2026-10-02 16:11:10.343 pid=26538 path=/data/user/0/com.shihab.diplay/files/logs/diplay.log
+16:11:10.354  Host started; MFI target=本地离线; transport=wireless
+16:11:10.355  Reusing existing background CarPlay service
+16:11:10.371  Texture surface created
+16:11:10.442  Video: decoder=OMX.qcom.video.decoder.hevc mime=video/hevc size=1920x1080
+16:11:10.444  Video recovery: requested keyframe sent=true
+16:11:10.645  Video: output format requested=1920x1080 coded=1920x1088 crop=0,0,1919,1079 stride=1920 slice=1088 color=1/1/2
+16:11:10.651  Wi-Fi P2P remembered saved=true proof=authenticated_first_frame
+16:11:10.651  Video: first frame rendered
+16:11:12.055  Receive: video packets=109 bytes=671629 readMaxMs=462 processMaxUs=5407 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=462 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:11:12.067  Video: video stats rx=21.4fps shown=3.6fps maxGap=864ms kbps=1072 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:11:12.338  Three-finger swipe tracking started
+16:11:17.068  Video: video stats rx=18.4fps shown=19.6fps maxGap=874ms kbps=971 recoveries=0 touch2frame avg=235ms max=235ms n=1 touchSendMax=3ms
+16:11:17.368  Receive: video packets=104 bytes=638617 readMaxMs=495 processMaxUs=7185 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=495 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:11:22.069  Video: video stats rx=4.0fps shown=4.0fps maxGap=1176ms kbps=36 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=6ms
+16:11:22.616  Receive: video packets=37 bytes=520290 readMaxMs=599 processMaxUs=4790 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=600 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:11:25.728  Three-finger swipe tracking started
+16:11:26.239  Video: recovery: video backlog exceeded 250 ms; waiting for keyframe
+16:11:26.311  Video recovery: requested keyframe sent=true
+16:11:26.363  Video: decoder=OMX.qcom.video.decoder.hevc mime=video/hevc size=1920x1080
+16:11:26.497  Video: output format requested=1920x1080 coded=1920x1088 crop=0,0,1919,1079 stride=1920 slice=1088 color=1/1/2
+16:11:26.506  Video: first frame rendered
+16:11:27.072  Video: video stats rx=28.0fps shown=24.0fps maxGap=436ms kbps=6228 recoveries=1 touch2frame avg=40ms max=377ms n=52 touchSendMax=7ms
+16:11:27.660  Receive: video packets=152 bytes=3683376 readMaxMs=376 processMaxUs=7270 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=376 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:11:32.076  Video: video stats rx=27.2fps shown=27.4fps maxGap=310ms kbps=6398 recoveries=0 touch2frame avg=28ms max=273ms n=46 touchSendMax=14ms
+16:11:32.661  Receive: video packets=132 bytes=4191212 readMaxMs=774 processMaxUs=6893 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=776 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:11:37.083  Video: video stats rx=26.4fps shown=26.2fps maxGap=775ms kbps=5741 recoveries=0 touch2frame avg=48ms max=709ms n=48 touchSendMax=7ms
+16:11:37.083  airplay command type=modesChanged keys=[appStates, resources]
+16:11:37.083  AirPlay command type=modesChanged params=appStates,resources
+16:11:37.701  Receive: video packets=146 bytes=3705703 readMaxMs=387 processMaxUs=4511 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=388 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:11:42.095  Video: video stats rx=25.2fps shown=24.6fps maxGap=662ms kbps=5375 recoveries=0 touch2frame avg=75ms max=341ms n=10 touchSendMax=8ms
+16:11:42.974  Receive: video packets=133 bytes=3003344 readMaxMs=662 processMaxUs=4827 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=662 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:11:47.091  Video: video stats rx=28.0fps shown=28.6fps maxGap=285ms kbps=2436 recoveries=0 touch2frame avg=40ms max=232ms n=14 touchSendMax=5ms
+16:11:47.993  Receive: video packets=152 bytes=2154520 readMaxMs=265 processMaxUs=3125 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=265 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:11:52.104  Video: video stats rx=26.4fps shown=26.6fps maxGap=539ms kbps=6067 recoveries=0 touch2frame avg=34ms max=110ms n=15 touchSendMax=7ms
+16:11:53.014  Receive: video packets=139 bytes=3156664 readMaxMs=476 processMaxUs=4822 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=476 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:11:56.107  airplay command type=modesChanged keys=[appStates, resources]
+16:11:56.108  AirPlay command type=modesChanged params=appStates,resources
+16:11:56.215  airplay command type=modesChanged keys=[appStates, resources]
+16:11:56.217  AirPlay command type=modesChanged params=appStates,resources
+16:11:56.279  airplay command type=modesChanged keys=[appStates, resources]
+16:11:56.281  AirPlay command type=modesChanged params=appStates,resources
+16:11:56.505  airplay SETUP keys=[streams]
+16:11:56.508  Audio UDP receive buffer type=102 original=212992 requested=524288 actual=1048576
+16:11:56.510  airplay audio stream type=102 accepted=true dataPort=44559 controlPort=37809
+16:11:56.513  airplay SETUP response streams=[{type=102, dataPort=44559, controlPort=37809, streamConnectionID=5112659213282725644}]
+16:11:57.115  Video: video stats rx=26.7fps shown=24.1fps maxGap=611ms kbps=525 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:11:58.019  Receive: video packets=126 bytes=310380 readMaxMs=796 processMaxUs=5779 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=796 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:12:01.569  Receive: audio type=102 packets=192 bytes=127933 readMaxMs=506 processMaxUs=4643 seqForwardGaps=25 lateOrDuplicate=0 interArrivalMaxMs=506 seqGapEvents=3 seqGapMax=15 seqGapLast=[expected=40491 received=40506 missing=15 previousRtpTs=35840 receivedRtpTs=52224] seqGapAtMs=1386 ended=false
+16:12:02.104  Video: video stats rx=14.6fps shown=17.2fps maxGap=872ms kbps=234 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:12:03.353  Receive: video packets=68 bytes=105759 readMaxMs=525 processMaxUs=958 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=526 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:12:04.091  iAP tunnel iap2 rx=0xae01
+16:12:06.664  Receive: audio type=102 packets=218 bytes=9156 readMaxMs=590 processMaxUs=951 seqForwardGaps=16 lateOrDuplicate=0 interArrivalMaxMs=590 seqGapEvents=1 seqGapMax=16 seqGapLast=[expected=40869 received=40885 missing=16 previousRtpTs=422912 receivedRtpTs=440320] seqGapAtMs=4570 ended=false
+16:12:07.109  Video: video stats rx=4.0fps shown=4.0fps maxGap=1140ms kbps=47 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:12:08.367  Receive: video packets=31 bytes=68651 readMaxMs=751 processMaxUs=969 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=751 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:12:08.450  Receive: audio type=102 packets=73 bytes=3066 readMaxMs=749 processMaxUs=634 seqForwardGaps=16 lateOrDuplicate=0 interArrivalMaxMs=749 seqGapEvents=1 seqGapMax=16 seqGapLast=[expected=40923 received=40939 missing=16 previousRtpTs=478208 receivedRtpTs=495616] seqGapAtMs=753 ended=true
+16:12:10.339  iAP tunnel iap2 rx=0xae01
+16:12:12.115  Video: video stats rx=6.8fps shown=6.8fps maxGap=878ms kbps=121 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:12:13.410  Receive: video packets=33 bytes=46727 readMaxMs=525 processMaxUs=905 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=526 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:12:15.552  airplay command type=modesChanged keys=[appStates, resources]
+16:12:15.555  AirPlay command type=modesChanged params=appStates,resources
+16:12:15.595  airplay command type=modesChanged keys=[appStates, resources]
+16:12:15.597  AirPlay command type=modesChanged params=appStates,resources
+16:12:15.629  airplay SETUP keys=[streams]
+16:12:15.630  Audio UDP receive buffer type=102 original=212992 requested=524288 actual=1048576
+16:12:15.631  airplay audio stream type=102 accepted=true dataPort=39240 controlPort=37780
+16:12:15.632  airplay SETUP response streams=[{type=102, dataPort=39240, controlPort=37780, streamConnectionID=9138844080469853979}]
+16:12:17.134  Video: video stats rx=18.0fps shown=17.6fps maxGap=934ms kbps=894 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:12:18.446  Receive: video packets=129 bytes=629537 readMaxMs=777 processMaxUs=3538 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=777 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:12:20.807  Receive: audio type=102 packets=197 bytes=17187 readMaxMs=633 processMaxUs=1696 seqForwardGaps=20 lateOrDuplicate=0 interArrivalMaxMs=633 seqGapEvents=2 seqGapMax=14 seqGapLast=[expected=49740 received=49754 missing=14 previousRtpTs=54272 receivedRtpTs=69632] seqGapAtMs=1743 ended=false
+16:12:22.121  Video: video stats rx=23.6fps shown=24.0fps maxGap=864ms kbps=539 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:12:23.474  Receive: video packets=123 bytes=433098 readMaxMs=492 processMaxUs=3022 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=493 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:12:23.536  Receive: audio type=102 packets=143 bytes=6006 readMaxMs=516 processMaxUs=959 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=516 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=true
+16:12:26.516  airplay command type=modesChanged keys=[appStates, resources]
+16:12:26.517  AirPlay command type=modesChanged params=appStates,resources
+16:12:26.540  airplay command type=modesChanged keys=[appStates, resources]
+16:12:26.541  AirPlay command type=modesChanged params=appStates,resources
+16:12:26.542  airplay SETUP keys=[streams]
+16:12:26.543  Audio UDP receive buffer type=102 original=212992 requested=524288 actual=1048576
+16:12:26.543  airplay audio stream type=102 accepted=true dataPort=40820 controlPort=43589
+16:12:26.544  airplay SETUP response streams=[{type=102, dataPort=40820, controlPort=43589, streamConnectionID=11835855187807061651}]
+16:12:27.122  Video: video stats rx=17.8fps shown=17.8fps maxGap=999ms kbps=333 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:12:28.484  Receive: video packets=65 bytes=134140 readMaxMs=526 processMaxUs=2552 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=526 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:12:31.572  Receive: audio type=102 packets=189 bytes=19097 readMaxMs=730 processMaxUs=2577 seqForwardGaps=28 lateOrDuplicate=0 interArrivalMaxMs=730 seqGapEvents=3 seqGapMax=18 seqGapLast=[expected=53511 received=53529 missing=18 previousRtpTs=35840 receivedRtpTs=55296] seqGapAtMs=1598 ended=false
+16:12:32.138  Video: video stats rx=15.8fps shown=15.8fps maxGap=896ms kbps=431 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:12:33.507  Receive: video packets=115 bytes=292324 readMaxMs=462 processMaxUs=2787 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=462 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:12:34.555  Receive: audio type=102 packets=143 bytes=6006 readMaxMs=547 processMaxUs=4895 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=547 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=true
+16:12:37.129  Video: video stats rx=24.6fps shown=23.4fps maxGap=872ms kbps=546 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:12:38.523  Receive: video packets=121 bytes=382255 readMaxMs=459 processMaxUs=5533 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=460 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:12:38.758  airplay command type=modesChanged keys=[appStates, resources]
+16:12:38.758  AirPlay command type=modesChanged params=appStates,resources
+16:12:39.657  Video: recovery: video backlog exceeded 250 ms; waiting for keyframe
+16:12:39.722  Video recovery: requested keyframe sent=true
+16:12:39.784  Video: decoder=OMX.qcom.video.decoder.hevc mime=video/hevc size=1920x1080
+16:12:39.913  Video: output format requested=1920x1080 coded=1920x1088 crop=0,0,1919,1079 stride=1920 slice=1088 color=1/1/2
+16:12:39.918  Video: first frame rendered
+16:12:41.630  Three-finger swipe tracking started
+16:12:42.132  Video: video stats rx=27.4fps shown=24.6fps maxGap=373ms kbps=2956 recoveries=1 touch2frame avg=32ms max=69ms n=11 touchSendMax=8ms
+16:12:43.971  Receive: video packets=126 bytes=1808596 readMaxMs=463 processMaxUs=6302 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=464 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:12:47.133  Video: video stats rx=5.4fps shown=5.6fps maxGap=954ms kbps=68 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:12:48.976  Receive: video packets=25 bytes=35050 readMaxMs=492 processMaxUs=647 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=492 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:12:52.179  Video: video stats rx=17.6fps shown=15.1fps maxGap=876ms kbps=465 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:12:52.533  Video: recovery: video backlog exceeded 250 ms; waiting for keyframe
+16:12:52.605  Video recovery: requested keyframe sent=true
+16:12:52.665  Video: decoder=OMX.qcom.video.decoder.hevc mime=video/hevc size=1920x1080
+16:12:52.763  Video: output format requested=1920x1080 coded=1920x1088 crop=0,0,1919,1079 stride=1920 slice=1088 color=1/1/2
+16:12:52.764  Video: first frame rendered
+16:12:53.989  Receive: video packets=135 bytes=514345 readMaxMs=412 processMaxUs=9132 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=412 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:12:57.183  Video: video stats rx=15.0fps shown=13.8fps maxGap=1007ms kbps=413 recoveries=1 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:12:59.018  Receive: video packets=60 bytes=136805 readMaxMs=531 processMaxUs=2573 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=531 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:13:01.046  Video: recovery: video backlog exceeded 250 ms; waiting for keyframe
+16:13:01.151  Video recovery: requested keyframe sent=true
+16:13:01.213  Video: decoder=OMX.qcom.video.decoder.hevc mime=video/hevc size=1920x1080
+16:13:01.313  Video: output format requested=1920x1080 coded=1920x1088 crop=0,0,1919,1079 stride=1920 slice=1088 color=1/1/2
+16:13:01.314  Video: first frame rendered
+16:13:02.191  Video: video stats rx=23.8fps shown=19.6fps maxGap=870ms kbps=972 recoveries=1 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:13:04.021  Receive: video packets=154 bytes=669674 readMaxMs=95 processMaxUs=6176 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=96 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:13:07.237  Video: video stats rx=26.6fps shown=23.6fps maxGap=773ms kbps=501 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:13:07.387  Video: recovery: video backlog exceeded 250 ms; waiting for keyframe
+16:13:07.487  Video recovery: requested keyframe sent=true
+16:13:07.547  Video: decoder=OMX.qcom.video.decoder.hevc mime=video/hevc size=1920x1080
+16:13:07.673  Video: output format requested=1920x1080 coded=1920x1088 crop=0,0,1919,1079 stride=1920 slice=1088 color=1/1/2
+16:13:07.677  Video: first frame rendered
+16:13:09.359  Receive: video packets=104 bytes=344685 readMaxMs=772 processMaxUs=8032 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=773 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:13:12.238  Video: video stats rx=5.8fps shown=4.6fps maxGap=882ms kbps=245 recoveries=1 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:13:14.361  Receive: video packets=25 bytes=37760 readMaxMs=516 processMaxUs=3649 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=516 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:13:17.243  Video: video stats rx=4.0fps shown=4.0fps maxGap=991ms kbps=54 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:13:18.977  Video: recovery: video backlog exceeded 250 ms; waiting for keyframe
+16:13:19.046  Video recovery: requested keyframe sent=true
+16:13:19.096  Video: decoder=OMX.qcom.video.decoder.hevc mime=video/hevc size=1920x1080
+16:13:19.256  Video: output format requested=1920x1080 coded=1920x1088 crop=0,0,1919,1079 stride=1920 slice=1088 color=1/1/2
+16:13:19.256  Video: first frame rendered
+16:13:19.388  Receive: video packets=69 bytes=292809 readMaxMs=550 processMaxUs=6260 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=550 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:13:22.244  Video: video stats rx=27.2fps shown=21.8fps maxGap=1047ms kbps=1023 recoveries=1 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:13:22.535  Video: recovery: video backlog exceeded 250 ms; waiting for keyframe
+16:13:22.597  Video recovery: requested keyframe sent=true
+16:13:22.635  Video: decoder=OMX.qcom.video.decoder.hevc mime=video/hevc size=1920x1080
+16:13:22.768  Video: output format requested=1920x1080 coded=1920x1088 crop=0,0,1919,1079 stride=1920 slice=1088 color=1/1/2
+16:13:22.770  Video: first frame rendered
+16:13:24.409  Receive: video packets=112 bytes=529054 readMaxMs=465 processMaxUs=4309 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=465 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:13:27.246  Video: video stats rx=6.0fps shown=5.2fps maxGap=1048ms kbps=244 recoveries=1 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:13:29.419  Receive: video packets=64 bytes=438470 readMaxMs=606 processMaxUs=4339 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=607 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:13:29.948  Video: recovery: video backlog exceeded 250 ms; waiting for keyframe
+16:13:30.007  Video recovery: requested keyframe sent=true
+16:13:30.066  Video: decoder=OMX.qcom.video.decoder.hevc mime=video/hevc size=1920x1080
+16:13:30.187  Video: output format requested=1920x1080 coded=1920x1088 crop=0,0,1919,1079 stride=1920 slice=1088 color=1/1/2
+16:13:30.198  Video: first frame rendered
+16:13:32.255  Video: video stats rx=25.6fps shown=22.0fps maxGap=889ms kbps=1166 recoveries=1 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:13:34.444  Receive: video packets=114 bytes=377061 readMaxMs=560 processMaxUs=2387 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=561 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:13:37.254  Video: video stats rx=7.4fps shown=7.4fps maxGap=1042ms kbps=91 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:13:39.456  Receive: video packets=50 bytes=233539 readMaxMs=567 processMaxUs=4834 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=567 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:13:42.257  Video: video stats rx=18.0fps shown=18.0fps maxGap=911ms kbps=472 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:13:44.451  Receive: video packets=72 bytes=150871 readMaxMs=497 processMaxUs=7569 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=497 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:13:47.259  Video: video stats rx=12.2fps shown=12.2fps maxGap=882ms kbps=210 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:13:49.464  Receive: video packets=103 bytes=357897 readMaxMs=503 processMaxUs=2625 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=503 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:13:52.263  Video: video stats rx=26.8fps shown=26.6fps maxGap=881ms kbps=792 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:13:54.480  Receive: video packets=154 bytes=383862 readMaxMs=68 processMaxUs=2851 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=68 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:13:57.265  Video: video stats rx=15.2fps shown=15.4fps maxGap=1024ms kbps=241 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:13:59.729  Receive: video packets=29 bytes=69840 readMaxMs=520 processMaxUs=2580 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=520 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:14:02.267  Video: video stats rx=17.8fps shown=17.8fps maxGap=911ms kbps=300 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:14:05.007  Receive: video packets=150 bytes=329384 readMaxMs=466 processMaxUs=4318 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=466 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:14:07.292  Video: video stats rx=23.5fps shown=21.9fps maxGap=785ms kbps=560 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:14:10.355  Receive: video packets=82 bytes=266752 readMaxMs=784 processMaxUs=5882 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=785 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:14:12.283  Video: video stats rx=6.8fps shown=8.4fps maxGap=883ms kbps=132 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:14:15.979  Receive: video packets=33 bytes=117690 readMaxMs=826 processMaxUs=3113 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=827 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:14:17.283  Video: video stats rx=12.4fps shown=12.4fps maxGap=881ms kbps=404 recoveries=0 touch2frame avg=25ms max=33ms n=2 touchSendMax=4ms
+16:14:17.437  airplay command type=modesChanged keys=[appStates, resources]
+16:14:17.437  AirPlay command type=modesChanged params=appStates,resources
+16:14:21.012  Receive: video packets=146 bytes=1162267 readMaxMs=559 processMaxUs=7822 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=561 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:14:22.328  Video: video stats rx=26.8fps shown=24.6fps maxGap=565ms kbps=1629 recoveries=0 touch2frame avg=298ms max=298ms n=1 touchSendMax=0ms
+16:14:23.536  Video: recovery: video backlog exceeded 250 ms; waiting for keyframe
+16:14:23.605  Video recovery: requested keyframe sent=true
+16:14:23.683  Video: decoder=OMX.qcom.video.decoder.hevc mime=video/hevc size=1920x1080
+16:14:23.826  Video: output format requested=1920x1080 coded=1920x1088 crop=0,0,1919,1079 stride=1920 slice=1088 color=1/1/2
+16:14:23.827  Video: first frame rendered
+16:14:26.045  Receive: video packets=150 bytes=633261 readMaxMs=110 processMaxUs=11968 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=110 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:14:27.330  Video: video stats rx=25.4fps shown=23.8fps maxGap=156ms kbps=1051 recoveries=1 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:14:29.408  Video: recovery: video backlog exceeded 250 ms; waiting for keyframe
+16:14:29.509  Video recovery: requested keyframe sent=true
+16:14:29.832  Video: decoder=OMX.qcom.video.decoder.hevc mime=video/hevc size=1920x1080
+16:14:29.906  Video: output format requested=1920x1080 coded=1920x1088 crop=0,0,1919,1079 stride=1920 slice=1088 color=1/1/2
+16:14:29.908  Video: first frame rendered
+16:14:31.348  Receive: video packets=92 bytes=459160 readMaxMs=921 processMaxUs=10724 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=921 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:14:32.336  Video: video stats rx=17.6fps shown=13.0fps maxGap=922ms kbps=712 recoveries=1 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:14:36.377  Receive: video packets=118 bytes=948944 readMaxMs=495 processMaxUs=6736 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=495 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:14:37.336  Video: video stats rx=22.8fps shown=21.4fps maxGap=872ms kbps=1607 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:14:38.261  Video: recovery: video backlog exceeded 250 ms; waiting for keyframe
+16:14:38.354  Video recovery: requested keyframe sent=true
+16:14:38.536  Video: decoder=OMX.qcom.video.decoder.hevc mime=video/hevc size=1920x1080
+16:14:38.952  Video: output format requested=1920x1080 coded=1920x1088 crop=0,0,1919,1079 stride=1920 slice=1088 color=1/1/2
+16:14:38.955  Video: first frame rendered
+16:14:41.378  Receive: video packets=103 bytes=405503 readMaxMs=497 processMaxUs=4093 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=497 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:14:42.336  Video: video stats rx=20.0fps shown=15.2fps maxGap=872ms kbps=422 recoveries=1 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:14:46.377  Receive: video packets=101 bytes=172077 readMaxMs=496 processMaxUs=4342 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=496 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:14:47.339  Video: video stats rx=16.2fps shown=17.8fps maxGap=875ms kbps=225 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:14:51.420  Receive: video packets=36 bytes=36226 readMaxMs=592 processMaxUs=813 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=592 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:14:52.344  Video: video stats rx=4.0fps shown=4.0fps maxGap=989ms kbps=31 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:14:56.447  Receive: video packets=26 bytes=24735 readMaxMs=498 processMaxUs=479 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=499 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:14:57.348  Video: video stats rx=4.0fps shown=4.0fps maxGap=871ms kbps=31 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:15:01.481  Receive: video packets=30 bytes=29698 readMaxMs=595 processMaxUs=783 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=596 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:15:02.352  Video: video stats rx=5.0fps shown=4.8fps maxGap=1061ms kbps=40 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:15:06.973  Receive: video packets=26 bytes=23620 readMaxMs=495 processMaxUs=15103 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=496 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:15:07.356  Video: video stats rx=3.8fps shown=4.0fps maxGap=872ms kbps=30 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:15:11.977  Receive: video packets=25 bytes=23509 readMaxMs=512 processMaxUs=466 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=512 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+16:15:12.361  Video: video stats rx=4.2fps shown=4.0fps maxGap=1011ms kbps=33 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+16:15:14.165  airplay control closing reason=control I/O failed: Software caused connection abort activeStreams=[130, 110]
+16:15:14.169  Receive: video packets=10 bytes=9408 readMaxMs=500 processMaxUs=432 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=500 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=true
+16:15:14.176  airplay event connection closed
+16:15:14.178  AirPlay transport error: Socket closed
+16:15:14.181  CarPlay transport error: Socket closed; reconnecting from scratch
+16:15:14.183  CarPlay transport error: Socket closed; retrying in 2000ms
+16:15:14.184  IAP2 RX [wireless-tunnel] FAILED: AirPlay iAP tunnel failed: SocketException: Software caused connection abort
+16:15:14.186  tunneled iAP2 control failed: AirPlay iAP tunnel failed: SocketException: Software caused connection abort
+16:15:14.189  ERROR AirPlay iAP tunnel failed: SocketException: Software caused connection abort
+16:15:14.192  AirPlay session ended peer=[ip]
+16:15:14.195  AirPlay session ended; reconnecting from scratch
+16:15:16.187  Reconnecting after CarPlay transport error: Socket closed
+16:15:20.204  CarPlay size=Default canvas=1920x1080
+16:15:20.207  Display request selected=Default percent=100 surface=1920x1080 resolution=100% base=1920x1080 candidate=1920x1080 fps=30 codec=HEVC softwareHevc=false
+16:15:20.209  Decoder capability enlargement check not required
+16:15:20.210  Display effective percent=100 canvas=1920x1080 decision=not_enlarging physical=300x169mm safeArea=AirPlayInsets(top=0, bottom=0, left=0, right=0) drawOutside=true
+16:15:20.220  Starting CarPlay controller at 1920x1080 -> 1920x1080 (1.0x) physical=300x169mm video=HEVC decoder=hardware microphone=true location=enabled mfi=本地离线
+16:15:20.229  mfi discovery backend=LocalOffline remoteFallback=disabled
+16:15:20.236  STEP mfi/start: preparing the configured MFi authentication provider
+16:15:20.239  STEP mfi/ready: MFi authentication provider is ready
+16:15:20.248  location provider prewarmed=true
+16:15:20.248  STEP wifi/ap: starting the wireless CarPlay access point
+16:15:20.249  wireless bring-up generation=1 starting
+16:15:20.256  Wi-Fi P2P preflight wifiEnabled=false locationEnabled=true permissionGranted=true locationAccessMode=0 stationMHz=unknown stationState=DISCONNECTED reportedStationMHz=unknown fiveGhzSupported=false
+16:15:20.257  Wi-Fi P2P startup stopped type=IOException
+16:15:20.258  wireless bring-up failed: Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect
+16:15:20.258  ERROR Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect
+16:15:20.259  失败：Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect; retrying in 4000ms
+16:15:24.266  Reconnecting after 失败：Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect
+16:15:24.283  CarPlay size=Default canvas=1920x1080
+16:15:24.286  Display request selected=Default percent=100 surface=1920x1080 resolution=100% base=1920x1080 candidate=1920x1080 fps=30 codec=HEVC softwareHevc=false
+16:15:24.287  Decoder capability enlargement check not required
+16:15:24.288  Display effective percent=100 canvas=1920x1080 decision=not_enlarging physical=300x169mm safeArea=AirPlayInsets(top=0, bottom=0, left=0, right=0) drawOutside=true
+16:15:24.293  Starting CarPlay controller at 1920x1080 -> 1920x1080 (1.0x) physical=300x169mm video=HEVC decoder=hardware microphone=true location=enabled mfi=本地离线
+16:15:24.299  mfi discovery backend=LocalOffline remoteFallback=disabled
+16:15:24.301  STEP mfi/start: preparing the configured MFi authentication provider
+16:15:24.309  STEP mfi/ready: MFi authentication provider is ready
+16:15:24.318  location provider prewarmed=true
+16:15:24.318  STEP wifi/ap: starting the wireless CarPlay access point
+16:15:24.319  wireless bring-up generation=1 starting
+16:15:24.328  Wi-Fi P2P preflight wifiEnabled=false locationEnabled=true permissionGranted=true locationAccessMode=0 stationMHz=unknown stationState=DISCONNECTED reportedStationMHz=unknown fiveGhzSupported=false
+16:15:24.328  Wi-Fi P2P startup stopped type=IOException
+16:15:24.329  wireless bring-up failed: Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect
+16:15:24.329  ERROR Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect
+16:15:24.330  失败：Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect; retrying in 8000ms
+16:15:32.337  Reconnecting after 失败：Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect
+16:15:32.347  CarPlay size=Default canvas=1920x1080
+16:15:32.352  Display request selected=Default percent=100 surface=1920x1080 resolution=100% base=1920x1080 candidate=1920x1080 fps=30 codec=HEVC softwareHevc=false
+16:15:32.353  Decoder capability enlargement check not required
+16:15:32.354  Display effective percent=100 canvas=1920x1080 decision=not_enlarging physical=300x169mm safeArea=AirPlayInsets(top=0, bottom=0, left=0, right=0) drawOutside=true
+16:15:32.361  Starting CarPlay controller at 1920x1080 -> 1920x1080 (1.0x) physical=300x169mm video=HEVC decoder=hardware microphone=true location=enabled mfi=本地离线
+16:15:32.367  mfi discovery backend=LocalOffline remoteFallback=disabled
+16:15:32.375  STEP mfi/start: preparing the configured MFi authentication provider
+16:15:32.377  STEP mfi/ready: MFi authentication provider is ready
+16:15:32.395  location provider prewarmed=true
+16:15:32.397  STEP wifi/ap: starting the wireless CarPlay access point
+16:15:32.399  wireless bring-up generation=1 starting
+16:15:32.400  Wi-Fi P2P preflight wifiEnabled=false locationEnabled=true permissionGranted=true locationAccessMode=0 stationMHz=unknown stationState=DISCONNECTED reportedStationMHz=unknown fiveGhzSupported=false
+16:15:32.402  Wi-Fi P2P startup stopped type=IOException
+16:15:32.403  wireless bring-up failed: Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect
+16:15:32.405  ERROR Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect
+16:15:32.407  失败：Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect; retrying in 16000ms
+--- previous-3.log ---
+DiPlay log started 2026-10-02 19:30:49.360 pid=7526 path=/data/user/0/com.shihab.diplay/files/logs/diplay.log
+19:30:49.381  Host started; MFI target=本地离线; transport=wireless
+19:30:49.431  Texture surface created
+19:30:49.933  Display detected: 1920x1080
+19:30:49.937  CarPlay size=Default canvas=1920x1080
+19:30:49.941  Display request selected=Default percent=100 surface=1920x1080 resolution=100% base=1920x1080 candidate=1920x1080 fps=30 codec=HEVC softwareHevc=false
+19:30:49.941  Decoder capability enlargement check not required
+19:30:49.942  Display effective percent=100 canvas=1920x1080 decision=not_enlarging physical=300x169mm safeArea=AirPlayInsets(top=0, bottom=0, left=0, right=0) drawOutside=true
+19:30:49.949  Starting CarPlay controller at 1920x1080 -> 1920x1080 (1.0x) physical=300x169mm video=HEVC decoder=hardware microphone=true location=enabled mfi=本地离线
+19:30:49.966  mfi discovery backend=LocalOffline remoteFallback=disabled
+19:30:49.969  STEP mfi/start: preparing the configured MFi authentication provider
+19:30:49.987  STEP mfi/ready: MFi authentication provider is ready
+19:30:49.988  location provider prewarmed=true
+19:30:49.989  STEP wifi/ap: starting the wireless CarPlay access point
+19:30:49.990  wireless bring-up generation=1 starting
+19:30:50.003  Wi-Fi P2P preflight wifiEnabled=false locationEnabled=true permissionGranted=true locationAccessMode=0 stationMHz=unknown stationState=DISCONNECTED reportedStationMHz=unknown fiveGhzSupported=false
+19:30:50.004  Wi-Fi P2P startup stopped type=IOException
+19:30:50.005  wireless bring-up failed: Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect
+19:30:50.006  ERROR Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect
+19:30:50.008  失败：Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect; retrying in 2000ms
+19:30:52.009  Reconnecting after 失败：Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect
+19:30:52.026  CarPlay size=Default canvas=1920x1080
+19:30:52.028  Display request selected=Default percent=100 surface=1920x1080 resolution=100% base=1920x1080 candidate=1920x1080 fps=30 codec=HEVC softwareHevc=false
+19:30:52.028  Decoder capability enlargement check not required
+19:30:52.029  Display effective percent=100 canvas=1920x1080 decision=not_enlarging physical=300x169mm safeArea=AirPlayInsets(top=0, bottom=0, left=0, right=0) drawOutside=true
+19:30:52.032  Starting CarPlay controller at 1920x1080 -> 1920x1080 (1.0x) physical=300x169mm video=HEVC decoder=hardware microphone=true location=enabled mfi=本地离线
+19:30:52.035  mfi discovery backend=LocalOffline remoteFallback=disabled
+19:30:52.042  STEP mfi/start: preparing the configured MFi authentication provider
+19:30:52.048  STEP mfi/ready: MFi authentication provider is ready
+19:30:52.058  location provider prewarmed=true
+19:30:52.059  STEP wifi/ap: starting the wireless CarPlay access point
+19:30:52.060  wireless bring-up generation=1 starting
+19:30:52.061  Wi-Fi P2P preflight wifiEnabled=false locationEnabled=true permissionGranted=true locationAccessMode=0 stationMHz=unknown stationState=DISCONNECTED reportedStationMHz=unknown fiveGhzSupported=false
+19:30:52.075  Wi-Fi P2P startup stopped type=IOException
+19:30:52.076  wireless bring-up failed: Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect
+19:30:52.076  ERROR Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect
+19:30:52.077  失败：Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect; retrying in 4000ms
+19:30:56.080  Reconnecting after 失败：Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect
+19:30:56.103  CarPlay size=Default canvas=1920x1080
+19:30:56.105  Display request selected=Default percent=100 surface=1920x1080 resolution=100% base=1920x1080 candidate=1920x1080 fps=30 codec=HEVC softwareHevc=false
+19:30:56.105  Decoder capability enlargement check not required
+19:30:56.106  Display effective percent=100 canvas=1920x1080 decision=not_enlarging physical=300x169mm safeArea=AirPlayInsets(top=0, bottom=0, left=0, right=0) drawOutside=true
+19:30:56.109  Starting CarPlay controller at 1920x1080 -> 1920x1080 (1.0x) physical=300x169mm video=HEVC decoder=hardware microphone=true location=enabled mfi=本地离线
+19:30:56.113  mfi discovery backend=LocalOffline remoteFallback=disabled
+19:30:56.119  STEP mfi/start: preparing the configured MFi authentication provider
+19:30:56.125  STEP mfi/ready: MFi authentication provider is ready
+19:30:56.135  location provider prewarmed=true
+19:30:56.135  STEP wifi/ap: starting the wireless CarPlay access point
+19:30:56.136  wireless bring-up generation=1 starting
+19:30:56.137  Wi-Fi P2P preflight wifiEnabled=false locationEnabled=true permissionGranted=true locationAccessMode=0 stationMHz=unknown stationState=DISCONNECTED reportedStationMHz=unknown fiveGhzSupported=false
+19:30:56.137  Wi-Fi P2P startup stopped type=IOException
+19:30:56.137  wireless bring-up failed: Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect
+19:30:56.138  ERROR Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect
+19:30:56.139  失败：Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect; retrying in 8000ms
+19:31:04.142  Reconnecting after 失败：Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect
+19:31:04.155  CarPlay size=Default canvas=1920x1080
+19:31:04.156  Display request selected=Default percent=100 surface=1920x1080 resolution=100% base=1920x1080 candidate=1920x1080 fps=30 codec=HEVC softwareHevc=false
+19:31:04.157  Decoder capability enlargement check not required
+19:31:04.157  Display effective percent=100 canvas=1920x1080 decision=not_enlarging physical=300x169mm safeArea=AirPlayInsets(top=0, bottom=0, left=0, right=0) drawOutside=true
+19:31:04.164  Starting CarPlay controller at 1920x1080 -> 1920x1080 (1.0x) physical=300x169mm video=HEVC decoder=hardware microphone=true location=enabled mfi=本地离线
+19:31:04.168  mfi discovery backend=LocalOffline remoteFallback=disabled
+19:31:04.170  STEP mfi/start: preparing the configured MFi authentication provider
+19:31:04.177  STEP mfi/ready: MFi authentication provider is ready
+19:31:04.183  location provider prewarmed=true
+19:31:04.183  STEP wifi/ap: starting the wireless CarPlay access point
+19:31:04.184  wireless bring-up generation=1 starting
+19:31:04.187  Wi-Fi P2P preflight wifiEnabled=false locationEnabled=true permissionGranted=true locationAccessMode=0 stationMHz=unknown stationState=DISCONNECTED reportedStationMHz=unknown fiveGhzSupported=false
+19:31:04.188  Wi-Fi P2P startup stopped type=IOException
+19:31:04.188  wireless bring-up failed: Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect
+19:31:04.189  ERROR Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect
+19:31:04.190  失败：Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect; retrying in 16000ms
+19:31:20.191  Reconnecting after 失败：Could not establish WIFI_P2P hotspot: Turn on Wi-Fi in the head unit's settings, then reconnect
+19:31:20.201  CarPlay size=Default canvas=1920x1080
+19:31:20.203  Display request selected=Default percent=100 surface=1920x1080 resolution=100% base=1920x1080 candidate=1920x1080 fps=30 codec=HEVC softwareHevc=false
+19:31:20.203  Decoder capability enlargement check not required
+19:31:20.204  Display effective percent=100 canvas=1920x1080 decision=not_enlarging physical=300x169mm safeArea=AirPlayInsets(top=0, bottom=0, left=0, right=0) drawOutside=true
+19:31:20.207  Starting CarPlay controller at 1920x1080 -> 1920x1080 (1.0x) physical=300x169mm video=HEVC decoder=hardware microphone=true location=enabled mfi=本地离线
+19:31:20.232  mfi discovery backend=LocalOffline remoteFallback=disabled
+19:31:20.268  STEP mfi/start: preparing the configured MFi authentication provider
+19:31:20.271  STEP mfi/ready: MFi authentication provider is ready
+19:31:20.297  location provider prewarmed=true
+19:31:20.299  STEP wifi/ap: starting the wireless CarPlay access point
+19:31:20.301  wireless bring-up generation=1 starting
+19:31:20.307  Wi-Fi P2P preflight wifiEnabled=true locationEnabled=true permissionGranted=true locationAccessMode=0 stationMHz=unknown stationState=DISCONNECTED reportedStationMHz=unknown fiveGhzSupported=true
+19:31:20.307  Wi-Fi P2P remembered first mode=FIXED_5_GHZ frequencyMHz=5180
+19:31:20.311  Wi-Fi P2P frameworkState=2
+19:31:20.313  Wi-Fi P2P existingGroup=false
+19:31:20.317  Wi-Fi P2P create mode=FIXED_5_GHZ frequencyMHz=5180
+19:31:20.385  Wi-Fi P2P ready mode=FIXED_5_GHZ band=5 GHz channel=36 frequencyMHz=5180
+19:31:20.386  Wi-Fi P2P channel requestedMHz=5180 actualMHz=5180 matched=true
+19:31:20.391  wireless hotspot backend=Wi-Fi P2P iface=p2p0 family=IPv6 identitySource=interface host=[ip] band=5 GHz channel=36 frequency=5180MHz
+19:31:20.395  STEP bt/select: waiting for a paired or connected iPhone
+19:31:20.396  STEP network/attach: attaching the AirPlay network transport
+19:31:20.410  wireless AirPlay listener attached bind=[ip] port=7000
+19:31:20.638  wireless Bonjour services started mode=interface iface=p2p0
+19:31:20.639  STEP bt/rfcomm: connecting to the iPhone iAP2 RFCOMM service
+19:31:20.640  wireless RFCOMM connecting address=[address] uuid=[identifier]
+19:31:21.281  wireless RFCOMM connected address=[address]
+19:31:21.283  wireless iAP2 CSM channel opened over RFCOMM
+19:31:21.285  STEP iap2/wireless: Bluetooth control loop running
+19:31:21.287  wireless Bluetooth iAP2 control starting
+19:31:21.403  IAP2 READY [wireless-rfcomm] ready=true
+19:31:21.620  iap2 identification accepted
+19:31:21.829  iap2 mfi rx=0xaa02 challenge bytes=32
+19:31:21.831  mfi local signature count=1 digestBytes=32
+19:31:21.835  iap2 mfi tx=0xaa03 signature bytes=64
+19:31:22.192  iap2 mfi rx=0xaa05 authentication-succeeded
+19:31:22.194  iap2 authentication accepted
+19:31:22.207  iap2 subscriptions sent
+19:31:22.209  iap2 rx=0x5702 request-wifi-configuration
+19:31:22.213  iap2 tx=0x5703 accessory-wifi-configuration
+19:31:22.214  iap2 rx=0x4e0d wireless-carplay-update available=true
+19:31:22.217  iap2 rx=0x4e0e device-transport-identifier bluetooth=[address] usb=[identifier]; resending 0x5703
+19:31:22.220  iap2 tx=0x5703 post-transport accessory-wifi-configuration
+19:31:22.307  iap2 rx=0x4300 carplay-availability
+19:31:22.309  iap2 tx=0x4301 carplay-start-session
+19:31:22.383  iap2 rx=0x5001
+19:31:22.430  iap2 rx=0xae01
+19:31:22.431  iap2 rx=0xae01
+19:31:22.447  iap2 rx=0xae01
+19:31:22.452  iap2 rx=0x5001
+19:31:22.460  iap2 rx=0x5001
+19:31:22.463  iap2 rx=0x5001
+19:31:22.467  iap2 rx=0x4158
+19:31:22.469  iap2 rx=0x4155
+19:31:24.409  TCP peer health enabled idle=10s interval=3s count=3 deadline=20000ms; no video-idle timeout
+19:31:24.671  airplay control encryption enabled
+19:31:24.690  mfi local signature count=2 digestBytes=32
+19:31:24.712  airplay SETUP keys=[deviceID, features, keepAliveLowPower, macAddress, model, name, osBuildVersion, osName, osVersion, sessionCorrelationUUID, sessionUUID, sourceVersion, statsCollectionEnabled, timingPort, updateSessionRequest]
+19:31:24.712  Phone display peer model=iPhone15,2 ios=27.0.1 airplay=980.77.1
+19:31:24.724  airplay event connection accepted from /[ip]:62597
+19:31:24.728  airplay /info displays=[{uuid=[identifier], type=110, maxFPS=30, widthPixels=1920, heightPixels=1080, widthPhysical=300, heightPhysical=169, features=10, primaryInputDevice=1, viewAreas=[{widthPixels=1920, heightPixels=1080, originXPixels=0, originYPixels=0, safeArea={widthPixels=1920, heightPixels=1080, originXPixels=0, originYPixels=0, drawUIOutsideSafeArea=true}}], initialViewArea=0}]
+19:31:24.798  AirPlay session active controller=[identifier] peer=[ip]
+19:31:24.800  AirPlay session active
+19:31:24.831  airplay SETUP keys=[streams]
+19:31:24.831  AirPlay iAP SETUP uuid=[identifier] seed=16604882448614275508 streamConnectionID=none
+19:31:24.834  AirPlay iAP tunnel listening address=[ip] port=37183
+19:31:24.834  airplay data stream type=130 accepted=true dataPort=37183
+19:31:24.834  airplay SETUP response streams=[{type=130, streamID=1, dataPort=37183}]
+19:31:24.838  wireless type-130 tunnel data stream accepted
+19:31:24.839  wireless iAP2 tunnel control starting
+19:31:24.857  airplay command type=modesChanged keys=[appStates, resources]
+19:31:24.857  AirPlay command type=modesChanged params=appStates,resources
+19:31:24.861  IAP2 READY [wireless-tunnel] ready=true
+19:31:24.985  iAP tunnel iap2 identification accepted
+19:31:25.075  airplay command type=modesChanged keys=[appStates, resources]
+19:31:25.076  AirPlay command type=modesChanged params=appStates,resources
+19:31:25.085  airplay command type=disableBluetooth keys=[deviceID]
+19:31:25.086  AirPlay command type=disableBluetooth params=deviceID
+19:31:25.087  wireless CarPlay Bluetooth handoff requested; waiting for tunnel iAP2 readiness
+19:31:25.096  airplay SETUP keys=[streams]
+19:31:25.106  airplay screen stream type=110 dataPort=40427
+19:31:25.107  airplay SETUP response streams=[{type=110, dataPort=40427}]
+19:31:25.107  iAP tunnel iap2 mfi rx=0xaa02 challenge bytes=32
+19:31:25.107  mfi local signature count=3 digestBytes=32
+19:31:25.108  iAP tunnel iap2 mfi tx=0xaa03 signature bytes=64
+19:31:25.250  iAP tunnel iap2 mfi rx=0xaa05 authentication-succeeded
+19:31:25.251  iAP tunnel iap2 authentication accepted
+19:31:25.253  iAP tunnel iap2 subscriptions sent
+19:31:25.254  wireless iAP2 tunnel ready; handoffRequested=true
+19:31:25.255  iAP tunnel iap2 rx=0x5702 request-wifi-configuration
+19:31:25.255  wireless handoff ready; closing Bluetooth bootstrap transport
+19:31:25.256  wireless RFCOMM EOF: iap2State=POST_TRANSPORT_WIFI_CONFIG_SENT wirelessCarPlayAvailable=true transportIdentifier=true carPlayStartSessions=1 postTransportConfigs=1 handoffRequested=true tunnelReady=true wirelessActive=true
+19:31:25.257  iAP tunnel iap2 tx=0x5703 accessory-wifi-configuration
+19:31:25.257  IAP2 CLOSE [wireless-rfcomm]
+19:31:25.258  STEP handoff/complete: tunnel iAP2 ready; Bluetooth bootstrap released
+19:31:25.258  iAP tunnel iap2 rx=0x4e0d wireless-carplay-update available=true
+19:31:25.259  iAP tunnel iap2 rx=0x4e0e device-transport-identifier bluetooth=[address] usb=[identifier]; resending 0x5703
+19:31:25.259  iAP tunnel iap2 tx=0x5703 post-transport accessory-wifi-configuration
+19:31:25.309  iAP tunnel iap2 rx=0x4300 carplay-availability
+19:31:25.310  iAP tunnel iap2 tx=0x4301 carplay-start-session
+19:31:25.313  iAP tunnel iap2 rx=0x5001
+19:31:25.318  iAP tunnel iap2 rx=0xae01
+19:31:25.320  iAP tunnel iap2 rx=0xae01
+19:31:25.322  iAP tunnel iap2 rx=0x5001
+19:31:25.322  iAP tunnel iap2 rx=0xae01
+19:31:25.323  iAP tunnel iap2 rx=0x5001
+19:31:25.324  iAP tunnel iap2 rx=0x5001
+19:31:25.325  iAP tunnel iap2 rx=0x4158
+19:31:25.325  iAP tunnel iap2 rx=0x4155
+19:31:25.358  Video: decoder=OMX.qcom.video.decoder.hevc mime=video/hevc size=1920x1080
+19:31:25.359  Video recovery: requested keyframe sent=true
+19:31:25.410  Video: output format requested=1920x1080 coded=1920x1088 crop=0,0,1919,1079 stride=1920 slice=1088 color=1/1/2
+19:31:25.411  Wi-Fi P2P remembered saved=true proof=authenticated_first_frame
+19:31:25.411  Video: first frame rendered
+19:31:30.223  Receive: video packets=63 bytes=1913333 readMaxMs=1050 processMaxUs=11120 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1050 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:31:30.304  Video: video stats rx=11.4fps shown=11.0fps maxGap=119ms kbps=3231 recoveries=0 touch2frame avg=156ms max=156ms n=1 touchSendMax=6ms
+19:31:35.245  Receive: video packets=83 bytes=2026235 readMaxMs=680 processMaxUs=6495 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=681 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:31:35.350  Video: video stats rx=15.3fps shown=14.1fps maxGap=682ms kbps=3009 recoveries=0 touch2frame avg=63ms max=282ms n=13 touchSendMax=8ms
+19:31:40.273  Receive: video packets=113 bytes=1491659 readMaxMs=530 processMaxUs=2415 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=531 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:31:40.362  Video: video stats rx=21.8fps shown=22.2fps maxGap=530ms kbps=2374 recoveries=0 touch2frame avg=101ms max=381ms n=11 touchSendMax=9ms
+19:31:40.742  iAP tunnel iap2 rx=0xae01
+19:31:45.309  Receive: video packets=126 bytes=3166861 readMaxMs=326 processMaxUs=6054 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=326 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:31:45.354  Video: video stats rx=24.0fps shown=23.8fps maxGap=434ms kbps=5021 recoveries=0 touch2frame avg=49ms max=124ms n=11 touchSendMax=10ms
+19:31:46.721  airplay command type=modesChanged keys=[appStates, resources]
+19:31:46.723  AirPlay command type=modesChanged params=appStates,resources
+19:31:48.100  airplay command type=modesChanged keys=[appStates, resources]
+19:31:48.101  AirPlay command type=modesChanged params=appStates,resources
+19:31:48.583  Video: recovery: video backlog exceeded 250 ms; waiting for keyframe
+19:31:48.669  Video recovery: requested keyframe sent=true
+19:31:48.730  Video: decoder=OMX.qcom.video.decoder.hevc mime=video/hevc size=1920x1080
+19:31:48.841  Video: output format requested=1920x1080 coded=1920x1088 crop=0,0,1919,1079 stride=1920 slice=1088 color=1/1/2
+19:31:48.850  Video: first frame rendered
+19:31:50.359  Video: video stats rx=21.6fps shown=19.0fps maxGap=282ms kbps=2377 recoveries=1 touch2frame avg=193ms max=217ms n=3 touchSendMax=5ms
+19:31:51.275  Receive: video packets=117 bytes=1506205 readMaxMs=1077 processMaxUs=6749 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1078 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:31:55.121  airplay command type=modesChanged keys=[appStates, resources]
+19:31:55.122  AirPlay command type=modesChanged params=appStates,resources
+19:31:55.362  Video: video stats rx=6.2fps shown=6.2fps maxGap=66ms kbps=1095 recoveries=0 touch2frame avg=411ms max=1446ms n=4 touchSendMax=6ms
+19:31:55.570  airplay command type=modesChanged keys=[appStates, resources]
+19:31:55.570  AirPlay command type=modesChanged params=appStates,resources
+19:31:56.100  airplay command type=modesChanged keys=[appStates, resources]
+19:31:56.101  AirPlay command type=modesChanged params=appStates,resources
+19:31:56.567  Receive: video packets=55 bytes=882835 readMaxMs=1082 processMaxUs=6150 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1082 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:31:57.462  airplay command type=modesChanged keys=[appStates, resources]
+19:31:57.463  AirPlay command type=modesChanged params=appStates,resources
+19:31:57.491  airplay SETUP keys=[streams]
+19:31:57.493  Audio UDP receive buffer type=102 original=212992 requested=524288 actual=1048576
+19:31:57.494  airplay audio stream type=102 accepted=true dataPort=38251 controlPort=49988
+19:31:57.495  airplay SETUP response streams=[{type=102, dataPort=38251, controlPort=49988, streamConnectionID=1255473538278834987}]
+19:31:57.596  Audio: ready audioType=media codec=AAC_LC rate=48000 channels=2 route=usage bufferMs=500 startMs=300
+19:31:58.157  iAP tunnel iap2 rx=0x5001
+19:31:58.162  iAP tunnel iap2 rx=0x5001
+19:31:58.173  iAP tunnel iap2 rx=0x5001
+19:31:58.173  iAP tunnel iap2 rx=0x5001
+19:31:58.174  iAP tunnel iap2 rx=0x5001
+19:31:58.604  iAP tunnel iap2 rx=0x5001
+19:31:59.055  iAP tunnel iap2 rx=0x5001
+19:31:59.512  iAP tunnel iap2 rx=0x5001
+19:31:59.956  iAP tunnel iap2 rx=0x5001
+19:31:59.968  iAP tunnel iap2 rx=0x5001
+19:31:59.977  iAP tunnel iap2 rx=0x5001
+19:32:00.366  Video: video stats rx=20.2fps shown=20.0fps maxGap=697ms kbps=1117 recoveries=0 touch2frame avg=201ms max=201ms n=1 touchSendMax=0ms
+19:32:00.407  iAP tunnel iap2 rx=0x5001
+19:32:00.859  iAP tunnel iap2 rx=0x5001
+19:32:01.309  iAP tunnel iap2 rx=0x5001
+19:32:01.569  Receive: video packets=103 bytes=638402 readMaxMs=697 processMaxUs=6889 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=698 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:32:01.765  iAP tunnel iap2 rx=0x5001
+19:32:02.214  iAP tunnel iap2 rx=0x5001
+19:32:02.554  Receive: audio type=102 packets=211 bytes=145548 readMaxMs=413 processMaxUs=1940 seqForwardGaps=6 lateOrDuplicate=0 interArrivalMaxMs=413 seqGapEvents=1 seqGapMax=6 seqGapLast=[expected=30189 received=30195 missing=6 previousRtpTs=8192 receivedRtpTs=15360] seqGapAtMs=493 ended=false
+19:32:02.668  iAP tunnel iap2 rx=0x5001
+19:32:02.860  audio stats audioType=media channel=MEDIA routeType=2 codec=AAC_LC trackState=1 playState=3 sampleRate=48000 trackBufferFrames=24000 rx=228 dropped=0 underruns=+0 queue=0 playing=true maxGapMs=414 sinceRxMs=292 maxWriteMs=277 writtenFrames=231424 totalWrittenFrames=231424 playbackHeadFrames=220800 playbackAdvanceFrames=-1 estimatedQueuedFrames=10624 writeErrors=0 lastWriteError=none zeroWrites=0 partialWrites=0 decoderDroppedTotal=0 outputBuffersTotal=226 rebuffers=0 ended=false
+19:32:03.117  iAP tunnel iap2 rx=0x5001
+19:32:03.570  iAP tunnel iap2 rx=0x5001
+19:32:04.021  iAP tunnel iap2 rx=0x5001
+19:32:04.475  iAP tunnel iap2 rx=0x5001
+19:32:04.922  iAP tunnel iap2 rx=0x5001
+19:32:05.372  Video: video stats rx=10.4fps shown=10.6fps maxGap=1472ms kbps=922 recoveries=0 touch2frame avg=90ms max=125ms n=2 touchSendMax=7ms
+19:32:05.581  iAP tunnel iap2 rx=0x5001
+19:32:05.822  iAP tunnel iap2 rx=0x5001
+19:32:06.274  iAP tunnel iap2 rx=0x5001
+19:32:06.725  iAP tunnel iap2 rx=0x5001
+19:32:06.753  Receive: video packets=48 bytes=529552 readMaxMs=804 processMaxUs=7929 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=804 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:32:07.174  iAP tunnel iap2 rx=0x5001
+19:32:07.626  iAP tunnel iap2 rx=0x5001
+19:32:07.867  audio stats audioType=media channel=MEDIA routeType=2 codec=AAC_LC trackState=1 playState=3 sampleRate=48000 trackBufferFrames=24000 rx=228 dropped=0 underruns=+0 queue=0 playing=true maxGapMs=470 sinceRxMs=316 maxWriteMs=261 writtenFrames=233472 totalWrittenFrames=464896 playbackHeadFrames=460800 playbackAdvanceFrames=240000 estimatedQueuedFrames=4096 writeErrors=0 lastWriteError=none zeroWrites=0 partialWrites=0 decoderDroppedTotal=0 outputBuffersTotal=454 rebuffers=0 ended=false
+19:32:08.002  Receive: audio type=102 packets=246 bytes=158771 readMaxMs=469 processMaxUs=7892 seqForwardGaps=11 lateOrDuplicate=0 interArrivalMaxMs=469 seqGapEvents=2 seqGapMax=6 seqGapLast=[expected=30648 received=30653 missing=5 previousRtpTs=478208 receivedRtpTs=484352] seqGapAtMs=5449 ended=false
+19:32:08.081  iAP tunnel iap2 rx=0x5001
+19:32:08.531  iAP tunnel iap2 rx=0x5001
+19:32:08.985  iAP tunnel iap2 rx=0x5001
+19:32:09.431  iAP tunnel iap2 rx=0x5001
+19:32:09.880  iAP tunnel iap2 rx=0x5001
+19:32:10.334  iAP tunnel iap2 rx=0x5001
+19:32:10.388  Video: video stats rx=17.8fps shown=17.8fps maxGap=1168ms kbps=5047 recoveries=0 touch2frame avg=71ms max=139ms n=3 touchSendMax=5ms
+19:32:10.648  iAP tunnel iap2 rx=0x5001
+19:32:10.652  iAP tunnel iap2 rx=0x5001
+19:32:10.784  iAP tunnel iap2 rx=0x5001
+19:32:11.200  iAP tunnel iap2 rx=0x5001
+19:32:11.204  iAP tunnel iap2 rx=0x5001
+19:32:11.236  iAP tunnel iap2 rx=0x5001
+19:32:11.691  iAP tunnel iap2 rx=0x5001
+19:32:11.745  iAP tunnel iap2 rx=0x5001
+19:32:11.770  iAP tunnel iap2 rx=0x5001
+19:32:11.839  airplay command type=modesChanged keys=[appStates, resources]
+19:32:11.841  AirPlay command type=modesChanged params=appStates,resources
+19:32:12.033  Receive: video packets=103 bytes=3199719 readMaxMs=808 processMaxUs=4199 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=808 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:32:12.141  iAP tunnel iap2 rx=0x5001
+19:32:12.314  iAP tunnel iap2 rx=0x5001
+19:32:12.593  iAP tunnel iap2 rx=0x5001
+19:32:12.869  audio stats audioType=media channel=MEDIA routeType=2 codec=AAC_LC trackState=1 playState=3 sampleRate=48000 trackBufferFrames=24000 rx=229 dropped=0 underruns=+1 queue=0 playing=true maxGapMs=451 sinceRxMs=344 maxWriteMs=4 writtenFrames=234496 totalWrittenFrames=699392 playbackHeadFrames=697088 playbackAdvanceFrames=236288 estimatedQueuedFrames=2304 writeErrors=0 lastWriteError=none zeroWrites=0 partialWrites=0 decoderDroppedTotal=0 outputBuffersTotal=683 rebuffers=1 ended=false
+19:32:12.873  iAP tunnel iap2 rx=0x5001
+19:32:12.876  iAP tunnel iap2 rx=0x5001
+19:32:13.042  iAP tunnel iap2 rx=0x5001
+19:32:13.312  Receive: audio type=102 packets=247 bytes=131967 readMaxMs=396 processMaxUs=1146 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=396 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:32:13.493  iAP tunnel iap2 rx=0x5001
+19:32:13.948  iAP tunnel iap2 rx=0x5001
+19:32:14.398  iAP tunnel iap2 rx=0x5001
+19:32:14.847  iAP tunnel iap2 rx=0x5001
+19:32:15.301  iAP tunnel iap2 rx=0x5001
+19:32:15.383  Video: video stats rx=21.6fps shown=21.6fps maxGap=1173ms kbps=845 recoveries=0 touch2frame avg=45ms max=60ms n=4 touchSendMax=7ms
+19:32:15.614  iAP tunnel iap2 rx=0x5001
+19:32:15.618  iAP tunnel iap2 rx=0x5001
+19:32:15.620  iAP tunnel iap2 rx=0x5001
+19:32:15.750  iAP tunnel iap2 rx=0x5001
+19:32:16.125  iAP tunnel iap2 rx=0x5001
+19:32:16.130  iAP tunnel iap2 rx=0x5001
+19:32:16.201  iAP tunnel iap2 rx=0x5001
+19:32:16.268  airplay command type=modesChanged keys=[appStates, resources]
+19:32:16.270  AirPlay command type=modesChanged params=appStates,resources
+19:32:16.637  iAP tunnel iap2 rx=0x5001
+19:32:16.640  iAP tunnel iap2 rx=0x5001
+19:32:16.652  iAP tunnel iap2 rx=0x5001
+19:32:16.721  iAP tunnel iap2 rx=0xae01
+19:32:17.105  iAP tunnel iap2 rx=0x5001
+19:32:17.144  Receive: video packets=139 bytes=739917 readMaxMs=293 processMaxUs=4521 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=293 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:32:17.160  iAP tunnel iap2 rx=0x5001
+19:32:17.557  iAP tunnel iap2 rx=0x5001
+19:32:17.708  iAP tunnel iap2 rx=0x5001
+19:32:17.711  iAP tunnel iap2 rx=0x5001
+19:32:17.880  audio stats audioType=media channel=MEDIA routeType=2 codec=AAC_LC trackState=1 playState=3 sampleRate=48000 trackBufferFrames=24000 rx=216 dropped=0 underruns=+1 queue=0 playing=true maxGapMs=743 sinceRxMs=347 maxWriteMs=0 writtenFrames=221184 totalWrittenFrames=920576 playbackHeadFrames=919808 playbackAdvanceFrames=222720 estimatedQueuedFrames=768 writeErrors=0 lastWriteError=none zeroWrites=0 partialWrites=0 decoderDroppedTotal=0 outputBuffersTotal=899 rebuffers=2 ended=false
+19:32:18.034  iAP tunnel iap2 rx=0x5001
+19:32:18.461  iAP tunnel iap2 rx=0x5001
+19:32:18.665  Receive: audio type=102 packets=224 bytes=135707 readMaxMs=743 processMaxUs=2394 seqForwardGaps=28 lateOrDuplicate=0 interArrivalMaxMs=743 seqGapEvents=2 seqGapMax=18 seqGapLast=[expected=31116 received=31126 missing=10 previousRtpTs=957440 receivedRtpTs=968704] seqGapAtMs=4734 ended=false
+19:32:18.915  iAP tunnel iap2 rx=0x5001
+19:32:19.367  iAP tunnel iap2 rx=0x5001
+19:32:19.815  iAP tunnel iap2 rx=0x5001
+19:32:20.268  iAP tunnel iap2 rx=0x5001
+19:32:20.377  Video: video stats rx=24.8fps shown=24.6fps maxGap=295ms kbps=705 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+19:32:20.717  iAP tunnel iap2 rx=0x5001
+19:32:21.172  iAP tunnel iap2 rx=0x5001
+19:32:21.618  iAP tunnel iap2 rx=0x5001
+19:32:22.072  iAP tunnel iap2 rx=0x5001
+19:32:22.165  Receive: video packets=118 bytes=226639 readMaxMs=293 processMaxUs=3261 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=294 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:32:22.523  iAP tunnel iap2 rx=0x5001
+19:32:22.885  audio stats audioType=media channel=MEDIA routeType=2 codec=AAC_LC trackState=1 playState=3 sampleRate=48000 trackBufferFrames=24000 rx=224 dropped=0 underruns=+2 queue=0 playing=true maxGapMs=505 sinceRxMs=376 maxWriteMs=260 writtenFrames=229376 totalWrittenFrames=1149952 playbackHeadFrames=1141376 playbackAdvanceFrames=221568 estimatedQueuedFrames=8576 writeErrors=0 lastWriteError=none zeroWrites=0 partialWrites=0 decoderDroppedTotal=0 outputBuffersTotal=1123 rebuffers=3 ended=false
+19:32:22.972  iAP tunnel iap2 rx=0x5001
+19:32:23.437  iAP tunnel iap2 rx=0x5001
+19:32:23.674  Receive: audio type=102 packets=234 bytes=160211 readMaxMs=405 processMaxUs=2654 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=405 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:32:23.790  airplay command type=modesChanged keys=[appStates, resources]
+19:32:23.791  AirPlay command type=modesChanged params=appStates,resources
+19:32:23.876  iAP tunnel iap2 rx=0x5001
+19:32:24.340  iAP tunnel iap2 rx=0x5001
+19:32:24.780  iAP tunnel iap2 rx=0x5001
+19:32:25.229  iAP tunnel iap2 rx=0x5001
+19:32:25.377  Video: video stats rx=20.2fps shown=20.4fps maxGap=137ms kbps=1479 recoveries=0 touch2frame avg=42ms max=56ms n=2 touchSendMax=9ms
+19:32:25.680  iAP tunnel iap2 rx=0x5001
+19:32:26.144  iAP tunnel iap2 rx=0x5001
+19:32:26.596  iAP tunnel iap2 rx=0x5001
+19:32:27.033  iAP tunnel iap2 rx=0x5001
+19:32:27.206  Receive: video packets=132 bytes=999461 readMaxMs=305 processMaxUs=4356 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=306 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:32:27.487  iAP tunnel iap2 rx=0x5001
+19:32:27.885  audio stats audioType=media channel=MEDIA routeType=2 codec=AAC_LC trackState=1 playState=3 sampleRate=48000 trackBufferFrames=24000 rx=226 dropped=0 underruns=+0 queue=0 playing=true maxGapMs=467 sinceRxMs=358 maxWriteMs=264 writtenFrames=231424 totalWrittenFrames=1381376 playbackHeadFrames=1379456 playbackAdvanceFrames=238080 estimatedQueuedFrames=1920 writeErrors=0 lastWriteError=none zeroWrites=0 partialWrites=0 decoderDroppedTotal=0 outputBuffersTotal=1349 rebuffers=3 ended=false
+19:32:27.969  iAP tunnel iap2 rx=0x5001
+19:32:28.388  iAP tunnel iap2 rx=0x5001
+19:32:28.840  iAP tunnel iap2 rx=0x5001
+19:32:29.039  Receive: audio type=102 packets=239 bytes=163136 readMaxMs=467 processMaxUs=2586 seqForwardGaps=13 lateOrDuplicate=0 interArrivalMaxMs=467 seqGapEvents=2 seqGapMax=8 seqGapLast=[expected=31584 received=31589 missing=5 previousRtpTs=1436672 receivedRtpTs=1442816] seqGapAtMs=4293 ended=false
+19:32:29.293  iAP tunnel iap2 rx=0x5001
+19:32:29.570  iAP tunnel iap2 rx=0x5001
+19:32:29.572  iAP tunnel iap2 rx=0x5001
+19:32:30.380  Video: video stats rx=28.0fps shown=27.8fps maxGap=306ms kbps=731 recoveries=0 touch2frame avg=21ms max=28ms n=2 touchSendMax=1ms
+19:32:32.226  Receive: video packets=142 bytes=568113 readMaxMs=279 processMaxUs=5942 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=280 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:32:33.138  audio stats audioType=media channel=MEDIA routeType=2 codec=AAC_LC trackState=1 playState=3 sampleRate=48000 trackBufferFrames=24000 rx=247 dropped=0 underruns=+2 queue=5 playing=true maxGapMs=438 sinceRxMs=267 maxWriteMs=275 writtenFrames=247808 totalWrittenFrames=1629184 playbackHeadFrames=1616640 playbackAdvanceFrames=237184 estimatedQueuedFrames=12544 writeErrors=0 lastWriteError=none zeroWrites=0 partialWrites=0 decoderDroppedTotal=0 outputBuffersTotal=1591 rebuffers=4 ended=false
+19:32:34.411  Receive: audio type=102 packets=252 bytes=17731 readMaxMs=390 processMaxUs=994 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=390 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:32:35.013  airplay command type=modesChanged keys=[appStates, resources]
+19:32:35.014  AirPlay command type=modesChanged params=appStates,resources
+19:32:35.384  Video: video stats rx=29.0fps shown=29.2fps maxGap=72ms kbps=644 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+19:32:37.034  airplay command type=modesChanged keys=[appStates, resources]
+19:32:37.035  AirPlay command type=modesChanged params=appStates,resources
+19:32:37.238  Receive: video packets=154 bytes=508665 readMaxMs=313 processMaxUs=5232 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=314 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:32:38.141  audio stats audioType=media channel=MEDIA routeType=2 codec=AAC_LC trackState=1 playState=2 sampleRate=48000 trackBufferFrames=24000 rx=198 dropped=0 underruns=+2 queue=0 playing=false maxGapMs=745 sinceRxMs=650 maxWriteMs=271 writtenFrames=207872 totalWrittenFrames=1837056 playbackHeadFrames=1837056 playbackAdvanceFrames=220416 estimatedQueuedFrames=0 writeErrors=0 lastWriteError=none zeroWrites=0 partialWrites=0 decoderDroppedTotal=0 outputBuffersTotal=1794 rebuffers=6 ended=false
+19:32:39.794  Receive: audio type=102 packets=216 bytes=9072 readMaxMs=763 processMaxUs=864 seqForwardGaps=36 lateOrDuplicate=0 interArrivalMaxMs=763 seqGapEvents=2 seqGapMax=18 seqGapLast=[expected=32052 received=32070 missing=18 previousRtpTs=1915904 receivedRtpTs=1935360] seqGapAtMs=3845 ended=false
+19:32:40.390  Video: video stats rx=29.6fps shown=29.6fps maxGap=314ms kbps=846 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+19:32:40.765  iAP tunnel iap2 rx=0xae01
+19:32:42.744  Receive: video packets=127 bytes=323760 readMaxMs=515 processMaxUs=4309 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=515 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:32:43.150  audio stats audioType=media channel=MEDIA routeType=2 codec=AAC_LC trackState=1 playState=3 sampleRate=48000 trackBufferFrames=24000 rx=234 dropped=0 underruns=+2 queue=0 playing=true maxGapMs=764 sinceRxMs=281 maxWriteMs=264 writtenFrames=239616 totalWrittenFrames=2076672 playbackHeadFrames=2064000 playbackAdvanceFrames=226944 estimatedQueuedFrames=12672 writeErrors=0 lastWriteError=none zeroWrites=0 partialWrites=0 decoderDroppedTotal=0 outputBuffersTotal=2028 rebuffers=8 ended=false
+19:32:44.267  audio stats audioType=media channel=MEDIA routeType=2 codec=AAC_LC trackState=1 playState=2 sampleRate=48000 trackBufferFrames=24000 rx=54 dropped=0 underruns=+1 queue=14 playing=false maxGapMs=523 sinceRxMs=7 maxWriteMs=266 writtenFrames=38912 totalWrittenFrames=2115584 playbackHeadFrames=2113536 playbackAdvanceFrames=49536 estimatedQueuedFrames=2048 writeErrors=0 lastWriteError=none zeroWrites=0 partialWrites=0 decoderDroppedTotal=0 outputBuffersTotal=2066 rebuffers=9 ended=true
+19:32:44.271  Receive: audio type=102 packets=215 bytes=9030 readMaxMs=523 processMaxUs=1761 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=523 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=true
+19:32:45.391  Video: video stats rx=19.2fps shown=18.4fps maxGap=584ms kbps=788 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+19:32:46.077  Three-finger swipe tracking started
+19:32:46.714  iAP tunnel iap2 rx=0xae01
+19:32:48.084  Receive: video packets=128 bytes=656815 readMaxMs=500 processMaxUs=11617 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=501 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:32:50.393  Video: video stats rx=13.6fps shown=14.4fps maxGap=856ms kbps=346 recoveries=0 touch2frame avg=104ms max=123ms n=2 touchSendMax=6ms
+19:32:53.099  Receive: video packets=60 bytes=148842 readMaxMs=535 processMaxUs=3579 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=535 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:32:55.401  Video: video stats rx=12.4fps shown=12.4fps maxGap=869ms kbps=243 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+19:32:58.228  Receive: video packets=34 bytes=55164 readMaxMs=524 processMaxUs=553 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=524 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:33:00.404  Video: video stats rx=4.0fps shown=4.0fps maxGap=973ms kbps=55 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+19:33:03.756  Receive: video packets=27 bytes=40247 readMaxMs=529 processMaxUs=820 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=529 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:33:05.409  Video: video stats rx=4.0fps shown=4.0fps maxGap=888ms kbps=55 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+19:33:08.829  Receive: video packets=69 bytes=167192 readMaxMs=526 processMaxUs=9310 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=526 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:33:10.414  Video: video stats rx=12.8fps shown=12.8fps maxGap=965ms kbps=250 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+19:33:10.739  iAP tunnel iap2 rx=0xae01
+19:33:13.833  Receive: video packets=34 bytes=54222 readMaxMs=527 processMaxUs=751 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=527 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:33:15.416  Video: video stats rx=5.4fps shown=5.4fps maxGap=880ms kbps=73 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+19:33:17.298  airplay command type=modesChanged keys=[appStates, resources]
+19:33:17.299  AirPlay command type=modesChanged params=appStates,resources
+19:33:17.337  airplay command type=modesChanged keys=[appStates, resources]
+19:33:17.338  AirPlay command type=modesChanged params=appStates,resources
+19:33:18.860  Receive: video packets=23 bytes=33895 readMaxMs=523 processMaxUs=698 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=523 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:33:20.414  airplay command type=modesChanged keys=[appStates, resources]
+19:33:20.415  AirPlay command type=modesChanged params=appStates,resources
+19:33:20.420  Video: video stats rx=4.6fps shown=4.2fps maxGap=997ms kbps=63 recoveries=0 touch2frame avg=255ms max=255ms n=1 touchSendMax=8ms
+19:33:24.230  Receive: video packets=97 bytes=1318647 readMaxMs=529 processMaxUs=10199 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=529 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:33:25.425  Video: video stats rx=16.2fps shown=16.6fps maxGap=315ms kbps=2057 recoveries=0 touch2frame avg=217ms max=239ms n=2 touchSendMax=6ms
+19:33:25.517  airplay command type=modesChanged keys=[appStates, resources]
+19:33:25.519  AirPlay command type=modesChanged params=appStates,resources
+19:33:29.611  Receive: video packets=71 bytes=441256 readMaxMs=1157 processMaxUs=2637 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1158 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:33:29.863  Three-finger swipe tracking started
+19:33:30.429  Video: video stats rx=18.8fps shown=18.0fps maxGap=1805ms kbps=844 recoveries=0 touch2frame avg=283ms max=349ms n=2 touchSendMax=7ms
+19:33:34.650  Receive: video packets=99 bytes=520430 readMaxMs=523 processMaxUs=6748 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=523 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:33:35.467  Video: video stats rx=18.1fps shown=16.1fps maxGap=875ms kbps=719 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+19:33:35.863  Video: recovery: video backlog exceeded 250 ms; waiting for keyframe
+19:33:35.945  Video recovery: requested keyframe sent=true
+19:33:36.015  Video: decoder=OMX.qcom.video.decoder.hevc mime=video/hevc size=1920x1080
+19:33:36.173  Video: output format requested=1920x1080 coded=1920x1088 crop=0,0,1919,1079 stride=1920 slice=1088 color=1/1/2
+19:33:36.175  Video: first frame rendered
+19:33:39.780  Receive: video packets=104 bytes=371316 readMaxMs=514 processMaxUs=6727 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=514 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:33:40.467  Video: video stats rx=17.0fps shown=15.0fps maxGap=915ms kbps=687 recoveries=1 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+19:33:44.801  Receive: video packets=62 bytes=203536 readMaxMs=778 processMaxUs=4456 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=778 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:33:45.470  Video: video stats rx=9.2fps shown=10.2fps maxGap=884ms kbps=128 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+19:33:49.836  Receive: video packets=24 bytes=36695 readMaxMs=523 processMaxUs=672 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=523 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+Activity destroyed
+--- previous-2.log ---
+DiPlay log started 2026-10-02 19:33:52.059 pid=7526 path=/data/user/0/com.shihab.diplay/files/logs/diplay.log
+19:33:52.070  Host started; MFI target=本地离线; transport=wireless
+19:33:52.099  Texture surface created
+19:33:52.602  Display detected: 1920x1080
+19:33:52.604  CarPlay size=Default canvas=1920x1080
+19:33:52.605  Display request selected=Default percent=100 surface=1920x1080 resolution=100% base=1920x1080 candidate=1920x1080 fps=30 codec=HEVC softwareHevc=false
+19:33:52.606  Decoder capability enlargement check not required
+19:33:52.606  Display effective percent=100 canvas=1920x1080 decision=not_enlarging physical=250x141mm safeArea=AirPlayInsets(top=0, bottom=0, left=0, right=0) drawOutside=true
+19:33:52.609  Starting CarPlay controller at 1920x1080 -> 1920x1080 (1.0x) physical=250x141mm video=HEVC decoder=hardware microphone=true location=enabled mfi=本地离线
+19:33:52.617  mfi discovery backend=LocalOffline remoteFallback=disabled
+19:33:52.632  STEP mfi/start: preparing the configured MFi authentication provider
+19:33:52.633  STEP mfi/ready: MFi authentication provider is ready
+19:33:52.633  location provider prewarmed=true
+19:33:52.634  STEP wifi/ap: starting the wireless CarPlay access point
+19:33:52.634  wireless bring-up generation=1 starting
+19:33:52.635  Wi-Fi P2P preflight wifiEnabled=true locationEnabled=true permissionGranted=true locationAccessMode=0 stationMHz=unknown stationState=DISCONNECTED reportedStationMHz=unknown fiveGhzSupported=true
+19:33:52.635  Wi-Fi P2P remembered first mode=FIXED_5_GHZ frequencyMHz=5180
+19:33:52.642  Wi-Fi P2P frameworkState=2
+19:33:52.643  Wi-Fi P2P existingGroup=false
+19:33:52.643  Wi-Fi P2P create mode=FIXED_5_GHZ frequencyMHz=5180
+19:33:52.716  Wi-Fi P2P ready mode=FIXED_5_GHZ band=5 GHz channel=36 frequencyMHz=5180
+19:33:52.717  Wi-Fi P2P channel requestedMHz=5180 actualMHz=5180 matched=true
+19:33:52.718  wireless hotspot backend=Wi-Fi P2P iface=p2p0 family=IPv6 identitySource=interface host=[ip] band=5 GHz channel=36 frequency=5180MHz
+19:33:52.725  STEP bt/select: waiting for a paired or connected iPhone
+19:33:52.727  STEP network/attach: attaching the AirPlay network transport
+19:33:52.744  wireless AirPlay listener attached bind=[ip] port=7000
+19:33:52.750  wireless Bonjour services started mode=interface iface=p2p0
+19:33:52.750  STEP bt/rfcomm: connecting to the iPhone iAP2 RFCOMM service
+19:33:52.751  wireless RFCOMM connecting address=[address] uuid=[identifier]
+19:33:53.173  wireless RFCOMM connected address=[address]
+19:33:53.175  wireless iAP2 CSM channel opened over RFCOMM
+19:33:53.176  STEP iap2/wireless: Bluetooth control loop running
+19:33:53.177  wireless Bluetooth iAP2 control starting
+19:33:53.226  IAP2 READY [wireless-rfcomm] ready=true
+19:33:53.410  iap2 identification accepted
+19:33:53.564  iap2 mfi rx=0xaa02 challenge bytes=32
+19:33:53.568  mfi local signature count=1 digestBytes=32
+19:33:53.572  iap2 mfi tx=0xaa03 signature bytes=64
+19:33:53.729  iap2 mfi rx=0xaa05 authentication-succeeded
+19:33:53.731  iap2 authentication accepted
+19:33:53.740  iap2 subscriptions sent
+19:33:53.742  iap2 rx=0x5702 request-wifi-configuration
+19:33:53.744  iap2 tx=0x5703 accessory-wifi-configuration
+19:33:53.746  iap2 rx=0x4e0d wireless-carplay-update available=true
+19:33:53.748  iap2 rx=0x4e0e device-transport-identifier bluetooth=[address] usb=[identifier]; resending 0x5703
+19:33:53.750  iap2 tx=0x5703 post-transport accessory-wifi-configuration
+19:33:53.784  iap2 rx=0x4300 carplay-availability
+19:33:53.786  iap2 tx=0x4301 carplay-start-session
+19:33:53.788  iap2 rx=0x5001
+19:33:53.809  iap2 rx=0x5001
+19:33:53.820  iap2 rx=0x5001
+19:33:53.821  iap2 rx=0xae01
+19:33:53.830  iap2 rx=0xae01
+19:33:53.831  iap2 rx=0xae01
+19:33:53.843  iap2 rx=0x5001
+19:33:53.845  iap2 rx=0x4158
+19:33:53.845  iap2 rx=0x4155
+19:33:56.353  TCP peer health enabled idle=10s interval=3s count=3 deadline=20000ms; no video-idle timeout
+19:33:56.666  airplay control encryption enabled
+19:33:56.979  mfi local signature count=2 digestBytes=32
+19:33:57.025  airplay SETUP keys=[deviceID, features, keepAliveLowPower, macAddress, model, name, osBuildVersion, osName, osVersion, sessionCorrelationUUID, sessionUUID, sourceVersion, statsCollectionEnabled, timingPort, updateSessionRequest]
+19:33:57.028  Phone display peer model=iPhone15,2 ios=27.0.1 airplay=980.77.1
+19:33:57.062  airplay event connection accepted from /[ip]:63190
+19:33:57.064  airplay /info displays=[{uuid=[identifier], type=110, maxFPS=30, widthPixels=1920, heightPixels=1080, widthPhysical=250, heightPhysical=141, features=10, primaryInputDevice=1, viewAreas=[{widthPixels=1920, heightPixels=1080, originXPixels=0, originYPixels=0, safeArea={widthPixels=1920, heightPixels=1080, originXPixels=0, originYPixels=0, drawUIOutsideSafeArea=true}}], initialViewArea=0}]
+19:33:57.131  AirPlay session active controller=[identifier] peer=[ip]
+19:33:57.132  AirPlay session active
+19:33:57.184  airplay SETUP keys=[streams]
+19:33:57.187  AirPlay iAP SETUP uuid=[identifier] seed=1196510893380928780 streamConnectionID=none
+19:33:57.188  AirPlay iAP tunnel listening address=[ip] port=42849
+19:33:57.188  airplay data stream type=130 accepted=true dataPort=42849
+19:33:57.189  airplay SETUP response streams=[{type=130, streamID=1, dataPort=42849}]
+19:33:57.191  wireless type-130 tunnel data stream accepted
+19:33:57.192  wireless iAP2 tunnel control starting
+19:33:57.196  airplay command type=modesChanged keys=[appStates, resources]
+19:33:57.197  AirPlay command type=modesChanged params=appStates,resources
+19:33:57.499  airplay command type=disableBluetooth keys=[deviceID]
+19:33:57.500  AirPlay command type=disableBluetooth params=deviceID
+19:33:57.500  wireless CarPlay Bluetooth handoff requested; waiting for tunnel iAP2 readiness
+19:33:57.512  airplay SETUP keys=[streams]
+19:33:57.523  airplay screen stream type=110 dataPort=39477
+19:33:57.524  airplay SETUP response streams=[{type=110, dataPort=39477}]
+19:33:57.558  airplay command type=modesChanged keys=[appStates, resources]
+19:33:57.559  AirPlay command type=modesChanged params=appStates,resources
+19:33:58.005  iap2 rx=0xfffa start-location-information components=[0, 1, 2, 32769, 32770]
+19:33:58.013  iap2 tx=0xfffb location-information
+19:33:58.030  IAP2 READY [wireless-tunnel] ready=true
+19:33:58.059  Video: decoder=OMX.qcom.video.decoder.hevc mime=video/hevc size=1920x1080
+19:33:58.062  Video recovery: requested keyframe sent=true
+19:33:58.092  Video: output format requested=1920x1080 coded=1920x1088 crop=0,0,1919,1079 stride=1920 slice=1088 color=1/1/2
+19:33:58.093  Video: first frame rendered
+19:33:58.209  iAP tunnel iap2 identification accepted
+19:33:58.564  iAP tunnel iap2 mfi rx=0xaa02 challenge bytes=32
+19:33:58.567  mfi local signature count=3 digestBytes=32
+19:33:58.571  iAP tunnel iap2 mfi tx=0xaa03 signature bytes=64
+19:33:58.730  iAP tunnel iap2 mfi rx=0xaa05 authentication-succeeded
+19:33:58.731  iAP tunnel iap2 authentication accepted
+19:33:58.734  iAP tunnel iap2 subscriptions sent
+19:33:58.739  Wi-Fi P2P remembered saved=true proof=authenticated_first_frame
+19:33:58.740  wireless iAP2 tunnel ready; handoffRequested=true
+19:33:58.740  iAP tunnel iap2 location request continues from the Bluetooth link components=[0, 1, 2, 32769, 32770]
+19:33:58.741  iAP tunnel iap2 tx=0xfffb location-information
+19:33:58.742  iAP tunnel iap2 rx=0x5702 request-wifi-configuration
+19:33:58.743  wireless handoff ready; closing Bluetooth bootstrap transport
+19:33:58.743  iAP tunnel iap2 tx=0x5703 accessory-wifi-configuration
+19:33:58.743  iAP tunnel iap2 rx=0x4e0d wireless-carplay-update available=true
+19:33:58.744  iAP tunnel iap2 rx=0x4e0e device-transport-identifier bluetooth=[address] usb=[identifier]; resending 0x5703
+19:33:58.745  iAP tunnel iap2 tx=0x5703 post-transport accessory-wifi-configuration
+19:33:58.746  wireless RFCOMM EOF: iap2State=POST_TRANSPORT_WIFI_CONFIG_SENT wirelessCarPlayAvailable=true transportIdentifier=true carPlayStartSessions=1 postTransportConfigs=1 handoffRequested=true tunnelReady=true wirelessActive=true
+19:33:58.747  IAP2 CLOSE [wireless-rfcomm]
+19:33:58.747  STEP handoff/complete: tunnel iAP2 ready; Bluetooth bootstrap released
+19:33:58.758  iAP tunnel iap2 rx=0x5001
+19:33:59.089  iAP tunnel iap2 rx=0xae01
+19:33:59.090  iAP tunnel iap2 rx=0xae01
+19:33:59.092  iAP tunnel iap2 rx=0xae01
+19:33:59.093  iAP tunnel iap2 rx=0x5001
+19:33:59.094  iAP tunnel iap2 rx=0x5001
+19:33:59.095  iAP tunnel iap2 rx=0x5001
+19:33:59.096  iAP tunnel iap2 rx=0x4158
+19:33:59.097  iAP tunnel iap2 rx=0x4155
+19:34:00.256  iAP tunnel iap2 rx=0x4300 carplay-availability
+19:34:00.259  iAP tunnel iap2 tx=0x4301 carplay-start-session
+19:34:02.676  Receive: video packets=64 bytes=542422 readMaxMs=2377 processMaxUs=5314 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=2377 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:34:03.027  Video: video stats rx=13.0fps shown=12.8fps maxGap=384ms kbps=881 recoveries=0 touch2frame avg=285ms max=285ms n=1 touchSendMax=5ms
+19:34:07.713  Receive: video packets=113 bytes=2624991 readMaxMs=499 processMaxUs=7102 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=499 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:34:08.031  Video: video stats rx=21.8fps shown=20.6fps maxGap=606ms kbps=4207 recoveries=0 touch2frame avg=60ms max=132ms n=10 touchSendMax=5ms
+19:34:09.060  Three-finger swipe tracking started
+19:34:10.739  iAP tunnel iap2 rx=0xae01
+19:34:11.424  Video: recovery: video backlog exceeded 250 ms; waiting for keyframe
+19:34:11.513  Video recovery: requested keyframe sent=true
+19:34:12.309  Video: decoder=OMX.qcom.video.decoder.hevc mime=video/hevc size=1920x1080
+19:34:12.343  Video: output format requested=1920x1080 coded=1920x1088 crop=0,0,1919,1079 stride=1920 slice=1088 color=1/1/2
+19:34:12.343  Video: first frame rendered
+19:34:12.728  Receive: video packets=121 bytes=454219 readMaxMs=846 processMaxUs=4767 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=846 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:34:13.032  Video: video stats rx=21.0fps shown=18.2fps maxGap=848ms kbps=652 recoveries=1 touch2frame avg=13ms max=23ms n=4 touchSendMax=4ms
+19:34:17.728  Receive: video packets=25 bytes=57500 readMaxMs=868 processMaxUs=656 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=868 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:34:18.037  Video: video stats rx=4.6fps shown=4.6fps maxGap=873ms kbps=79 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+Activity destroyed
+--- previous.log ---
+DiPlay log started 2026-10-02 19:34:23.198 pid=7526 path=/data/user/0/com.shihab.diplay/files/logs/diplay.log
+19:34:23.212  Host started; MFI target=本地离线; transport=wireless
+19:34:23.244  Texture surface created
+19:34:23.746  Display detected: 1920x1080
+19:34:23.748  CarPlay size=Default canvas=1920x1080
+19:34:23.749  Display request selected=Default percent=100 surface=1920x1080 resolution=100% base=1920x1080 candidate=1920x1080 fps=30 codec=HEVC softwareHevc=false
+19:34:23.750  Decoder capability enlargement check not required
+19:34:23.750  Display effective percent=100 canvas=1920x1080 decision=not_enlarging physical=300x169mm safeArea=AirPlayInsets(top=0, bottom=0, left=0, right=0) drawOutside=true
+19:34:23.753  Starting CarPlay controller at 1920x1080 -> 1920x1080 (1.0x) physical=300x169mm video=HEVC decoder=hardware microphone=true location=enabled mfi=本地离线
+19:34:23.760  mfi discovery backend=LocalOffline remoteFallback=disabled
+19:34:23.777  STEP mfi/start: preparing the configured MFi authentication provider
+19:34:23.778  STEP mfi/ready: MFi authentication provider is ready
+19:34:23.778  location provider prewarmed=true
+19:34:23.779  STEP wifi/ap: starting the wireless CarPlay access point
+19:34:23.779  wireless bring-up generation=1 starting
+19:34:23.780  Wi-Fi P2P preflight wifiEnabled=true locationEnabled=true permissionGranted=true locationAccessMode=0 stationMHz=unknown stationState=DISCONNECTED reportedStationMHz=unknown fiveGhzSupported=true
+19:34:23.780  Wi-Fi P2P remembered first mode=FIXED_5_GHZ frequencyMHz=5180
+19:34:23.786  Wi-Fi P2P frameworkState=2
+19:34:23.787  Wi-Fi P2P existingGroup=false
+19:34:23.787  Wi-Fi P2P create mode=FIXED_5_GHZ frequencyMHz=5180
+19:34:23.854  Wi-Fi P2P ready mode=FIXED_5_GHZ band=5 GHz channel=36 frequencyMHz=5180
+19:34:23.855  Wi-Fi P2P channel requestedMHz=5180 actualMHz=5180 matched=true
+19:34:23.855  wireless hotspot backend=Wi-Fi P2P iface=p2p0 family=IPv6 identitySource=interface host=[ip] band=5 GHz channel=36 frequency=5180MHz
+19:34:23.857  STEP bt/select: waiting for a paired or connected iPhone
+19:34:23.872  STEP network/attach: attaching the AirPlay network transport
+19:34:23.889  wireless AirPlay listener attached bind=[ip] port=7000
+19:34:23.896  wireless Bonjour services started mode=interface iface=p2p0
+19:34:23.896  STEP bt/rfcomm: connecting to the iPhone iAP2 RFCOMM service
+19:34:23.897  wireless RFCOMM connecting address=[address] uuid=[identifier]
+19:34:24.175  wireless RFCOMM connected address=[address]
+19:34:24.176  wireless iAP2 CSM channel opened over RFCOMM
+19:34:24.176  STEP iap2/wireless: Bluetooth control loop running
+19:34:24.177  wireless Bluetooth iAP2 control starting
+19:34:24.258  IAP2 READY [wireless-rfcomm] ready=true
+19:34:24.448  iap2 identification accepted
+19:34:24.588  iap2 mfi rx=0xaa02 challenge bytes=32
+19:34:24.589  mfi local signature count=1 digestBytes=32
+19:34:24.592  iap2 mfi tx=0xaa03 signature bytes=64
+19:34:24.762  iap2 mfi rx=0xaa05 authentication-succeeded
+19:34:24.764  iap2 authentication accepted
+19:34:24.776  iap2 subscriptions sent
+19:34:24.777  iap2 rx=0x5702 request-wifi-configuration
+19:34:24.778  iap2 tx=0x5703 accessory-wifi-configuration
+19:34:24.780  iap2 rx=0x4e0d wireless-carplay-update available=true
+19:34:24.782  iap2 rx=0x4e0e device-transport-identifier bluetooth=[address] usb=[identifier]; resending 0x5703
+19:34:24.783  iap2 tx=0x5703 post-transport accessory-wifi-configuration
+19:34:24.786  iap2 rx=0x4300 carplay-availability
+19:34:24.788  iap2 tx=0x4301 carplay-start-session
+19:34:24.798  iap2 rx=0x5001
+19:34:24.799  iap2 rx=0x5001
+19:34:24.800  iap2 rx=0x5001
+19:34:24.811  iap2 rx=0x5001
+19:34:24.812  iap2 rx=0xae01
+19:34:24.822  iap2 rx=0xae01
+19:34:24.822  iap2 rx=0xae01
+19:34:24.855  iap2 rx=0x4158
+19:34:24.856  iap2 rx=0x4155
+19:34:27.062  TCP peer health enabled idle=10s interval=3s count=3 deadline=20000ms; no video-idle timeout
+19:34:27.285  airplay control encryption enabled
+19:34:27.293  mfi local signature count=2 digestBytes=32
+19:34:27.320  airplay SETUP keys=[deviceID, features, keepAliveLowPower, macAddress, model, name, osBuildVersion, osName, osVersion, sessionCorrelationUUID, sessionUUID, sourceVersion, statsCollectionEnabled, timingPort, updateSessionRequest]
+19:34:27.322  Phone display peer model=iPhone15,2 ios=27.0.1 airplay=980.77.1
+19:34:27.334  airplay event connection accepted from /[ip]:63267
+19:34:27.336  airplay /info displays=[{uuid=[identifier], type=110, maxFPS=30, widthPixels=1920, heightPixels=1080, widthPhysical=300, heightPhysical=169, features=10, primaryInputDevice=1, viewAreas=[{widthPixels=1920, heightPixels=1080, originXPixels=0, originYPixels=0, safeArea={widthPixels=1920, heightPixels=1080, originXPixels=0, originYPixels=0, drawUIOutsideSafeArea=true}}], initialViewArea=0}]
+19:34:27.411  AirPlay session active controller=[identifier] peer=[ip]
+19:34:27.412  AirPlay session active
+19:34:27.437  airplay SETUP keys=[streams]
+19:34:27.438  AirPlay iAP SETUP uuid=[identifier] seed=10603848280477199863 streamConnectionID=none
+19:34:27.441  AirPlay iAP tunnel listening address=[ip] port=40267
+19:34:27.442  airplay data stream type=130 accepted=true dataPort=40267
+19:34:27.442  airplay SETUP response streams=[{type=130, streamID=1, dataPort=40267}]
+19:34:27.444  wireless type-130 tunnel data stream accepted
+19:34:27.446  wireless iAP2 tunnel control starting
+19:34:27.452  airplay command type=modesChanged keys=[appStates, resources]
+19:34:27.452  AirPlay command type=modesChanged params=appStates,resources
+19:34:27.457  airplay command type=disableBluetooth keys=[deviceID]
+19:34:27.458  AirPlay command type=disableBluetooth params=deviceID
+19:34:27.458  wireless CarPlay Bluetooth handoff requested; waiting for tunnel iAP2 readiness
+19:34:27.526  IAP2 READY [wireless-tunnel] ready=true
+19:34:27.652  iAP tunnel iap2 identification accepted
+19:34:27.659  airplay command type=modesChanged keys=[appStates, resources]
+19:34:27.662  AirPlay command type=modesChanged params=appStates,resources
+19:34:27.670  airplay SETUP keys=[streams]
+19:34:27.672  airplay screen stream type=110 dataPort=40567
+19:34:27.680  airplay SETUP response streams=[{type=110, dataPort=40567}]
+19:34:27.778  iAP tunnel iap2 mfi rx=0xaa02 challenge bytes=32
+19:34:27.779  mfi local signature count=3 digestBytes=32
+19:34:27.780  iAP tunnel iap2 mfi tx=0xaa03 signature bytes=64
+19:34:27.803  Video: decoder=OMX.qcom.video.decoder.hevc mime=video/hevc size=1920x1080
+19:34:27.805  Video recovery: requested keyframe sent=true
+19:34:27.846  Video: output format requested=1920x1080 coded=1920x1088 crop=0,0,1919,1079 stride=1920 slice=1088 color=1/1/2
+19:34:27.847  Video: first frame rendered
+19:34:27.900  iAP tunnel iap2 mfi rx=0xaa05 authentication-succeeded
+19:34:27.900  iAP tunnel iap2 authentication accepted
+19:34:27.903  iAP tunnel iap2 subscriptions sent
+19:34:27.906  Wi-Fi P2P remembered saved=true proof=authenticated_first_frame
+19:34:27.907  wireless iAP2 tunnel ready; handoffRequested=true
+19:34:27.907  wireless handoff ready; closing Bluetooth bootstrap transport
+19:34:27.908  wireless RFCOMM EOF: iap2State=POST_TRANSPORT_WIFI_CONFIG_SENT wirelessCarPlayAvailable=true transportIdentifier=true carPlayStartSessions=1 postTransportConfigs=1 handoffRequested=true tunnelReady=true wirelessActive=true
+19:34:27.908  IAP2 CLOSE [wireless-rfcomm]
+19:34:27.909  STEP handoff/complete: tunnel iAP2 ready; Bluetooth bootstrap released
+19:34:27.909  iAP tunnel iap2 rx=0x5702 request-wifi-configuration
+19:34:27.913  iAP tunnel iap2 tx=0x5703 accessory-wifi-configuration
+19:34:27.914  iAP tunnel iap2 rx=0x4e0d wireless-carplay-update available=true
+19:34:27.915  iAP tunnel iap2 rx=0x4e0e device-transport-identifier bluetooth=[address] usb=[identifier]; resending 0x5703
+19:34:27.916  iAP tunnel iap2 tx=0x5703 post-transport accessory-wifi-configuration
+19:34:27.934  iAP tunnel iap2 rx=0x4300 carplay-availability
+19:34:27.935  iAP tunnel iap2 tx=0x4301 carplay-start-session
+19:34:27.936  iAP tunnel iap2 rx=0x5001
+19:34:27.940  iAP tunnel iap2 rx=0xae01
+19:34:27.941  iAP tunnel iap2 rx=0xae01
+19:34:27.942  iAP tunnel iap2 rx=0xae01
+19:34:27.944  iAP tunnel iap2 rx=0x5001
+19:34:27.945  iAP tunnel iap2 rx=0x5001
+19:34:27.946  iAP tunnel iap2 rx=0x4158
+19:34:27.947  iAP tunnel iap2 rx=0x4155
+19:34:27.948  iAP tunnel iap2 rx=0x5001
+19:34:32.693  Receive: video packets=124 bytes=2231627 readMaxMs=829 processMaxUs=7444 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=830 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:34:32.780  Video: video stats rx=23.8fps shown=23.6fps maxGap=830ms kbps=3753 recoveries=0 touch2frame avg=93ms max=822ms n=17 touchSendMax=7ms
+19:34:34.016  Three-finger swipe tracking started
+19:34:37.721  Receive: video packets=11 bytes=148559 readMaxMs=1029 processMaxUs=1735 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1029 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:34:37.790  Video: video stats rx=0.6fps shown=0.8fps maxGap=375ms kbps=19 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=1ms
+19:34:42.724  Receive: video packets=5 bytes=640 readMaxMs=1005 processMaxUs=4 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1007 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:34:47.731  Receive: video packets=5 bytes=640 readMaxMs=1004 processMaxUs=5 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1004 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:34:52.789  Video: video stats rx=0.8fps shown=0.8fps maxGap=63ms kbps=17 recoveries=0 touch2frame avg=17920ms max=17920ms n=1 touchSendMax=0ms
+19:34:53.730  Receive: video packets=10 bytes=12629 readMaxMs=1019 processMaxUs=439 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1019 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:34:58.723  Receive: video packets=5 bytes=640 readMaxMs=1340 processMaxUs=35 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1341 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:35:03.726  Receive: video packets=5 bytes=640 readMaxMs=1003 processMaxUs=6 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1003 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:35:08.733  Receive: video packets=5 bytes=640 readMaxMs=1340 processMaxUs=5 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1341 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:35:14.730  Receive: video packets=6 bytes=768 readMaxMs=1013 processMaxUs=5 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1013 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:35:20.723  Receive: video packets=6 bytes=768 readMaxMs=1331 processMaxUs=4 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1331 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:35:25.887  Receive: video packets=5 bytes=640 readMaxMs=1160 processMaxUs=4 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1160 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:35:31.731  Receive: video packets=6 bytes=768 readMaxMs=1022 processMaxUs=4 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1022 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:35:37.898  Receive: video packets=6 bytes=768 readMaxMs=1371 processMaxUs=5 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1371 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:35:43.723  Receive: video packets=6 bytes=768 readMaxMs=1028 processMaxUs=4 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1028 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:35:49.708  Receive: video packets=6 bytes=768 readMaxMs=1011 processMaxUs=5 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1011 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:35:52.817  Video: video stats rx=0.8fps shown=0.8fps maxGap=63ms kbps=17 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+19:35:55.735  Receive: video packets=10 bytes=12156 readMaxMs=1032 processMaxUs=1045 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1032 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:36:01.733  Receive: video packets=6 bytes=768 readMaxMs=1027 processMaxUs=4 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1027 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:36:07.748  Receive: video packets=6 bytes=768 readMaxMs=1105 processMaxUs=5 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1105 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:36:13.689  Receive: video packets=6 bytes=768 readMaxMs=1013 processMaxUs=16 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1013 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:36:18.714  Receive: video packets=5 bytes=640 readMaxMs=1353 processMaxUs=4 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1353 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:36:24.739  Receive: video packets=6 bytes=768 readMaxMs=1028 processMaxUs=5 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1028 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:36:30.722  Receive: video packets=6 bytes=768 readMaxMs=1521 processMaxUs=6 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1522 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:36:36.816  Receive: video packets=5 bytes=640 readMaxMs=2083 processMaxUs=3 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=2083 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:36:42.724  Receive: video packets=7 bytes=896 readMaxMs=1142 processMaxUs=7 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1142 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:36:48.732  Receive: video packets=3 bytes=384 readMaxMs=4010 processMaxUs=6 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=4010 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:36:52.853  Video: video stats rx=0.8fps shown=0.8fps maxGap=59ms kbps=17 recoveries=0 touch2frame avg=-1ms max=0ms n=0 touchSendMax=0ms
+Activity destroyed
+--- diplay.log ---
+DiPlay log started 2026-10-02 19:36:56.081 pid=7526 path=/data/user/0/com.shihab.diplay/files/logs/diplay.log
+19:36:56.100  Host started; MFI target=本地离线; transport=wireless
+19:36:56.130  Texture surface created
+19:36:56.633  Display detected: 1920x1080
+19:36:56.640  CarPlay size=Default canvas=1920x1080
+19:36:56.646  Display request selected=Default percent=100 surface=1920x1080 resolution=100% base=1920x1080 candidate=1920x1080 fps=30 codec=HEVC softwareHevc=false
+19:36:56.648  Decoder capability enlargement check not required
+19:36:56.649  Display effective percent=100 canvas=1920x1080 decision=not_enlarging physical=300x169mm safeArea=AirPlayInsets(top=0, bottom=0, left=0, right=0) drawOutside=true
+19:36:56.656  Starting CarPlay controller at 1920x1080 -> 1920x1080 (1.0x) physical=300x169mm video=HEVC decoder=hardware microphone=true location=enabled mfi=本地离线
+19:36:56.661  mfi discovery backend=LocalOffline remoteFallback=disabled
+19:36:56.669  STEP mfi/start: preparing the configured MFi authentication provider
+19:36:56.677  STEP mfi/ready: MFi authentication provider is ready
+19:36:56.677  location provider prewarmed=true
+19:36:56.678  STEP wifi/ap: starting the wireless CarPlay access point
+19:36:56.679  wireless bring-up generation=1 starting
+19:36:56.685  Wi-Fi P2P preflight wifiEnabled=true locationEnabled=true permissionGranted=true locationAccessMode=0 stationMHz=unknown stationState=DISCONNECTED reportedStationMHz=unknown fiveGhzSupported=true
+19:36:56.686  Wi-Fi P2P remembered first mode=FIXED_5_GHZ frequencyMHz=5180
+19:36:56.686  Wi-Fi P2P frameworkState=2
+19:36:56.686  Wi-Fi P2P existingGroup=false
+19:36:56.687  Wi-Fi P2P create mode=FIXED_5_GHZ frequencyMHz=5180
+19:36:56.767  Wi-Fi P2P ready mode=FIXED_5_GHZ band=5 GHz channel=36 frequencyMHz=5180
+19:36:56.768  Wi-Fi P2P channel requestedMHz=5180 actualMHz=5180 matched=true
+19:36:56.769  wireless hotspot backend=Wi-Fi P2P iface=p2p0 family=IPv6 identitySource=interface host=[ip] band=5 GHz channel=36 frequency=5180MHz
+19:36:56.787  STEP bt/select: waiting for a paired or connected iPhone
+19:36:56.788  STEP network/attach: attaching the AirPlay network transport
+19:36:56.804  wireless AirPlay listener attached bind=[ip] port=7000
+19:36:56.810  wireless Bonjour services started mode=interface iface=p2p0
+19:36:56.810  STEP bt/rfcomm: connecting to the iPhone iAP2 RFCOMM service
+19:36:56.811  wireless RFCOMM connecting address=[address] uuid=[identifier]
+19:36:57.321  wireless RFCOMM connected address=[address]
+19:36:57.322  wireless iAP2 CSM channel opened over RFCOMM
+19:36:57.323  STEP iap2/wireless: Bluetooth control loop running
+19:36:57.324  wireless Bluetooth iAP2 control starting
+19:36:57.503  IAP2 READY [wireless-rfcomm] ready=true
+19:36:57.801  iap2 identification accepted
+19:36:57.997  iap2 mfi rx=0xaa02 challenge bytes=32
+19:36:57.999  mfi local signature count=1 digestBytes=32
+19:36:58.001  iap2 mfi tx=0xaa03 signature bytes=64
+19:36:58.198  iap2 mfi rx=0xaa05 authentication-succeeded
+19:36:58.200  iap2 authentication accepted
+19:36:58.209  iap2 subscriptions sent
+19:36:58.210  iap2 rx=0x5702 request-wifi-configuration
+19:36:58.212  iap2 tx=0x5703 accessory-wifi-configuration
+19:36:58.213  iap2 rx=0x4e0d wireless-carplay-update available=true
+19:36:58.221  iap2 rx=0x4e0e device-transport-identifier bluetooth=[address] usb=[identifier]; resending 0x5703
+19:36:58.223  iap2 tx=0x5703 post-transport accessory-wifi-configuration
+19:36:58.296  iap2 rx=0x4300 carplay-availability
+19:36:58.299  iap2 tx=0x4301 carplay-start-session
+19:36:58.303  iap2 rx=0x5001
+19:36:58.305  iap2 rx=0xae01
+19:36:58.306  iap2 rx=0xae01
+19:36:58.363  iap2 rx=0xae01
+19:36:58.364  iap2 rx=0x5001
+19:36:58.424  iap2 rx=0x5001
+19:36:58.437  iap2 rx=0x4158
+19:36:58.439  iap2 rx=0x4155
+19:36:58.440  iap2 rx=0x5001
+19:37:01.251  TCP peer health enabled idle=10s interval=3s count=3 deadline=20000ms; no video-idle timeout
+19:37:01.478  airplay control encryption enabled
+19:37:01.487  mfi local signature count=2 digestBytes=32
+19:37:01.514  airplay SETUP keys=[deviceID, features, keepAliveLowPower, macAddress, model, name, osBuildVersion, osName, osVersion, sessionCorrelationUUID, sessionUUID, sourceVersion, statsCollectionEnabled, timingPort, updateSessionRequest]
+19:37:01.515  Phone display peer model=iPhone15,2 ios=27.0.1 airplay=980.77.1
+19:37:01.527  airplay event connection accepted from /[ip]:63369
+19:37:01.530  airplay /info displays=[{uuid=[identifier], type=110, maxFPS=30, widthPixels=1920, heightPixels=1080, widthPhysical=300, heightPhysical=169, features=10, primaryInputDevice=1, viewAreas=[{widthPixels=1920, heightPixels=1080, originXPixels=0, originYPixels=0, safeArea={widthPixels=1920, heightPixels=1080, originXPixels=0, originYPixels=0, drawUIOutsideSafeArea=true}}], initialViewArea=0}]
+19:37:01.594  AirPlay session active controller=[identifier] peer=[ip]
+19:37:01.595  AirPlay session active
+19:37:01.636  airplay SETUP keys=[streams]
+19:37:01.638  AirPlay iAP SETUP uuid=[identifier] seed=3912542790344730463 streamConnectionID=none
+19:37:01.641  AirPlay iAP tunnel listening address=[ip] port=42055
+19:37:01.641  airplay data stream type=130 accepted=true dataPort=42055
+19:37:01.642  airplay SETUP response streams=[{type=130, streamID=1, dataPort=42055}]
+19:37:01.644  wireless type-130 tunnel data stream accepted
+19:37:01.645  wireless iAP2 tunnel control starting
+19:37:01.650  airplay command type=modesChanged keys=[appStates, resources]
+19:37:01.650  AirPlay command type=modesChanged params=appStates,resources
+19:37:01.779  airplay command type=modesChanged keys=[appStates, resources]
+19:37:01.781  AirPlay command type=modesChanged params=appStates,resources
+19:37:01.786  airplay SETUP keys=[streams]
+19:37:01.788  airplay screen stream type=110 dataPort=38789
+19:37:01.798  airplay SETUP response streams=[{type=110, dataPort=38789}]
+19:37:01.799  airplay command type=disableBluetooth keys=[deviceID]
+19:37:01.800  AirPlay command type=disableBluetooth params=deviceID
+19:37:01.800  wireless CarPlay Bluetooth handoff requested; waiting for tunnel iAP2 readiness
+19:37:01.832  IAP2 READY [wireless-tunnel] ready=true
+19:37:01.903  Video: decoder=OMX.qcom.video.decoder.hevc mime=video/hevc size=1920x1080
+19:37:01.905  Video recovery: requested keyframe sent=true
+19:37:01.950  Video: output format requested=1920x1080 coded=1920x1088 crop=0,0,1919,1079 stride=1920 slice=1088 color=1/1/2
+19:37:01.966  Video: first frame rendered
+19:37:01.966  iAP tunnel iap2 identification accepted
+19:37:02.082  iAP tunnel iap2 mfi rx=0xaa02 challenge bytes=32
+19:37:02.083  mfi local signature count=3 digestBytes=32
+19:37:02.083  iAP tunnel iap2 mfi tx=0xaa03 signature bytes=64
+19:37:02.216  iAP tunnel iap2 mfi rx=0xaa05 authentication-succeeded
+19:37:02.217  iAP tunnel iap2 authentication accepted
+19:37:02.218  iAP tunnel iap2 subscriptions sent
+19:37:02.219  Wi-Fi P2P remembered saved=true proof=authenticated_first_frame
+19:37:02.220  wireless iAP2 tunnel ready; handoffRequested=true
+19:37:02.222  iAP tunnel iap2 rx=0x5702 request-wifi-configuration
+19:37:02.223  wireless handoff ready; closing Bluetooth bootstrap transport
+19:37:02.224  wireless RFCOMM EOF: iap2State=POST_TRANSPORT_WIFI_CONFIG_SENT wirelessCarPlayAvailable=true transportIdentifier=true carPlayStartSessions=1 postTransportConfigs=1 handoffRequested=true tunnelReady=true wirelessActive=true
+19:37:02.227  IAP2 CLOSE [wireless-rfcomm]
+19:37:02.228  STEP handoff/complete: tunnel iAP2 ready; Bluetooth bootstrap released
+19:37:02.229  iAP tunnel iap2 tx=0x5703 accessory-wifi-configuration
+19:37:02.229  iAP tunnel iap2 rx=0x4e0d wireless-carplay-update available=true
+19:37:02.229  iAP tunnel iap2 rx=0x4e0e device-transport-identifier bluetooth=[address] usb=[identifier]; resending 0x5703
+19:37:02.230  iAP tunnel iap2 tx=0x5703 post-transport accessory-wifi-configuration
+19:37:02.230  iAP tunnel iap2 rx=0x4300 carplay-availability
+19:37:02.230  iAP tunnel iap2 tx=0x4301 carplay-start-session
+19:37:02.231  iAP tunnel iap2 rx=0x5001
+19:37:02.234  iAP tunnel iap2 rx=0xae01
+19:37:02.235  iAP tunnel iap2 rx=0xae01
+19:37:02.236  iAP tunnel iap2 rx=0xae01
+19:37:02.238  iAP tunnel iap2 rx=0x5001
+19:37:02.240  iAP tunnel iap2 rx=0x5001
+19:37:02.241  iAP tunnel iap2 rx=0x4158
+19:37:02.241  iAP tunnel iap2 rx=0x4155
+19:37:02.242  iAP tunnel iap2 rx=0x5001
+19:37:06.880  Video: video stats rx=14.0fps shown=14.0fps maxGap=334ms kbps=3543 recoveries=0 touch2frame avg=215ms max=215ms n=1 touchSendMax=6ms
+19:37:06.945  Receive: video packets=78 bytes=2228619 readMaxMs=1096 processMaxUs=7515 seqForwardGaps=0 lateOrDuplicate=0 interArrivalMaxMs=1096 seqGapEvents=0 seqGapMax=0 seqGapLast=[none] seqGapAtMs=-1 ended=false
+19:37:07.399  Three-finger swipe tracking started
